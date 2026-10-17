@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل الكتب الكامل — EXAADO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root { --navy:#0a1633; --navy2:#0d1b3d; --deep:#060d20; --gold:#d4af37; --gold-l:#f0d47c; --gold-ll:#f7e28b; --text:#e8ecf6; --muted:#c9d2ea; --dim:#8b96b5; }
+html { scroll-behavior:smooth; }
+body { font-family:'Almarai',system-ui,sans-serif; background:linear-gradient(165deg,var(--deep) 0%,var(--navy) 55%,var(--navy2) 100%); color:var(--text); direction:rtl; line-height:1.8; min-height:100vh; }
+nav { position:sticky; top:0; z-index:50; background:rgba(6,13,32,.92); backdrop-filter:blur(10px); border-bottom:1px solid rgba(212,175,55,.35); padding:10px 16px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center; }
+nav .logo { color:var(--gold); font-weight:800; font-size:15px; white-space:nowrap; }
+nav a { color:var(--muted); text-decoration:none; font-size:13px; padding:4px 10px; border-radius:20px; transition:.2s; }
+nav a:hover, nav a.active { color:var(--deep); background:var(--gold); font-weight:700; }
+.wrap { max-width:1080px; margin:0 auto; padding:0 16px 60px; }
+.hero { text-align:center; padding:56px 16px 36px; }
+.orb { width:110px; height:110px; margin:0 auto 22px; border-radius:50%; background:radial-gradient(circle at 35% 30%, #1d3a7a, var(--navy) 70%); border:2px solid rgba(212,175,55,.6); box-shadow:0 0 40px rgba(212,175,55,.25); color:var(--gold-l); font-size:48px; line-height:110px; }
+.badge { display:inline-block; border:1px solid var(--gold); border-radius:30px; padding:5px 18px; color:var(--gold-l); font-size:14px; margin-bottom:18px; background:rgba(212,175,55,.08); }
+.hero h1 { font-size:clamp(28px,6vw,44px); color:#fff; font-weight:800; margin-bottom:14px; }
+.hero p { color:var(--muted); font-size:15px; max-width:640px; margin:0 auto; }
+.hero .tagline { color:var(--gold); font-weight:700; font-size:17px; margin-top:20px; }
+.goldline { width:150px; height:1px; background:var(--gold); margin:26px auto; opacity:.7; }
+section.sec { margin-top:44px; }
+.sec-head { text-align:center; margin-bottom:26px; }
+.sec-head .sn { color:var(--gold); font-size:13px; letter-spacing:5px; margin-bottom:8px; }
+.sec-head h2 { font-size:clamp(22px,4.5vw,30px); color:#fff; font-weight:800; }
+.sec-head p { color:var(--muted); font-size:14px; margin-top:6px; }
+.cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px; }
+.card { border:1px solid rgba(212,175,55,.45); border-radius:16px; background:rgba(13,23,51,.55); padding:18px 18px 16px; break-inside:avoid; }
+.chead { border-bottom:1px solid rgba(212,175,55,.3); padding-bottom:10px; margin-bottom:12px; display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+.num { display:inline-block; min-width:26px; height:26px; border-radius:50%; background:var(--gold); color:#241c04; font-weight:800; font-size:14px; text-align:center; line-height:26px; }
+.btitle { font-weight:800; font-size:17px; color:#fff; flex:1; min-width:140px; }
+.badgetag { border:1px solid var(--gold); border-radius:20px; padding:2px 10px; color:var(--gold-l); font-size:11px; white-space:nowrap; }
+.en { display:block; color:var(--gold); font-size:13px; font-weight:700; direction:ltr; text-align:right; margin-top:6px; }
+.meta { color:var(--dim); font-size:12px; margin-top:6px; }
+.block { margin-top:10px; font-size:14px; }
+.lab { color:var(--gold-l); font-weight:800; font-size:13.5px; }
+ul.take, ol.steps, ul.lul { margin:6px 18px 0 0; }
+.take li { margin-bottom:5px; color:var(--muted); font-size:13.5px; }
+.steps li { margin-bottom:6px; color:#fff; font-size:13.5px; }
+.fruit { margin-top:12px; border:1px solid rgba(212,175,55,.55); background:rgba(212,175,55,.1); border-radius:10px; padding:8px 12px; color:var(--gold-ll); font-weight:700; font-size:13px; }
+.plan { margin-top:10px; color:var(--muted); font-size:12.5px; }
+.plan b { color:var(--gold-l); }
+.lecture { border:2px solid var(--gold); border-radius:18px; background:linear-gradient(170deg, rgba(212,175,55,.1), rgba(6,13,32,.6)); padding:22px; margin:26px 0 20px; box-shadow:0 0 30px rgba(212,175,55,.12); }
+.lecture h3 { color:#fff; font-size:21px; font-weight:800; margin-bottom:6px; }
+.lsub { color:var(--gold-l); font-size:14px; font-weight:700; margin-bottom:12px; }
+.lintro { color:var(--text); font-size:14px; border-bottom:1px solid rgba(212,175,55,.3); padding-bottom:12px; margin-bottom:14px; }
+.lpart { margin-bottom:16px; }
+.lpart .lh { color:var(--gold-l); font-weight:800; font-size:15.5px; margin-bottom:6px; }
+.lpart li { font-size:13.5px; color:var(--muted); margin-bottom:5px; }
+footer { text-align:center; padding:30px 16px 20px; color:var(--dim); font-size:12px; border-top:1px solid rgba(212,175,55,.2); margin-top:50px; }
+footer .g { color:var(--gold); }
+#top-btn { position:fixed; bottom:22px; left:22px; width:44px; height:44px; border-radius:50%; background:var(--gold); color:var(--deep); border:none; font-size:20px; font-weight:800; cursor:pointer; opacity:0; transition:.25s; z-index:60; }
+#top-btn.show { opacity:.9; }
+@media (max-width:480px){ .cards { grid-template-columns:1fr; } nav a { font-size:12px; padding:3px 8px; } }
+</style>
+</head>
+<body>
+<nav>
+<span class="logo">◆ دليل الكتب</span>
+<a href="#sec-money">المال</a><a href="#sec-mindset">تطوير النفس</a><a href="#sec-mgmt">إدارة الأعمال كمدير</a><a href="#sec-income">اربح أكتر</a><a href="#sec-habits">طوّر من نفسك</a><a href="#sec-ai">الشغل مع الـ AI</a>
+</nav>
+<div class="wrap">
+<div class="hero">
+<div class="orb">📚</div>
+<div class="badge">أكاديمية اكسادو — التعليم قبل أي حاجة</div>
+<h1>دليل الكتب الكامل</h1>
+<p>أفضل 60 كتابًا في العالم — الأكثر مبيعًا + الأعلى تقييمًا: المال • تطوير النفس • إدارة الأعمال • زيادة الدخل • تطوير الذات • الشغل مع الـ AI<br>كل كتاب: الفكرة الكبيرة + أهم ما فيه + خطوات تنفيذية تدي ثمرة + خطة تطبيق (يوم / أسبوع / شهر) — ومحاضرة مصغرة كاملة عن التعامل مع الـ AI</p>
+<div class="tagline">«نلخص لك كتب العالم — والباقي عليك: التطبيق»</div>
+<div class="goldline"></div>
+</div>
+<section class="sec" id="sec-money">
+<div class="sec-head"><div class="sn">◆ القسم 1 من 6 ◆</div><h2>المال</h2><p>فلوسك: اكتسبها، احميها، خليها تشتغل معاك</p></div>
+<div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">سيكولوجية الفلوس</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Psychology of Money</span>
+<div class="meta">مورجان هاوسل — أكتر من 4 مليون نسخة — أشهر كتاب فلوس في العقد الأخير</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الفلوس مش رياضيات، دي سلوك واتجاه نفسي. اللي بيكسب مش أذكى واحد، ده اللي بيتصرف صح وقت طويل من غير ما يخرب حاجة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الغنى مش دخلك، ده الفرق بين دخلك ومصروفك — لو بتصرف كل حاجة انت غني في الورق بس.</li><li>الوقت والمثابرة أقوى من الذكاء: أغلب الثروات اتبنت بالانتظار الصبور مش بالضربات الذكية.</li><li>خلي عندك هامش أمان (Margin of Safety): اتحرك دايمًا بحيث لو حصل أسوأ سيناريو تعديه.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب قاعدتك الشخصية: «أنا عمري ما هخسر فلوس أنا محتاجها في أقل من 5 سنين» واطبعها قدامك.</li><li>حدد نسبة ادخار ثابتة (10-20%) تتحول أول ما المرتب ينزل، مش اللي يتبقى في آخر الشهر.</li><li>اقعد مرة كل شهر ساعة واحدة: راجع مصاريفك وحط الفرق في استثمار طويل الأجل بسيط.</li></ol></div>
+<div class="fruit">★ النتيجة: بعد سنة: عادة ادخار اتوماتيك + أول 10-20% من مرتبك بتشتغل لوحدها</div>
+<div class="plan"><b>اليوم الأول:</b> افتح حساب تاني وقرب الاستقطاع التلقائي النهاردة. <b>الأسبوع الأول:</b> راقب مصاريفك أسبوع وسجل كل جنيه في أي حتة. <b>الشهر الأول:</b> راجع أول 30 يوم وثبّت النسبة اللي تنفعك فعلًا.</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">البابا الغني والبابا الفقير</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Rich Dad Poor Dad</span>
+<div class="meta">روبرت كيوساكي — أكتر من 30 مليون نسخة — أشهر كتاب مالي في التاريخ الحديث</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الفرق بين الغني والفقير مش في المرتب، في الوعي المالي: الغني بيجمّع أصول (حاجات بتحط فلوس في جيبك) والفقير بيجمّع التزامات (حاجات بتسحب من جيبك).</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الأصول = أي حاجة بتدفعلك، الالتزامات = أي حاجة بتاخد منك — خلي فلوسك تشتغل بدالك.</li><li>اشتغل عشان تتعلم مش عشان المرتب: كل وظيفة فرصة تكسب مهارة أو علاقة.</li><li>الخوف والجشع هما اللي بيتحكموا في أغلب الناس — الوعي المالي هو إنك تعرف تتخطاهم.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اعمل ورقة بعمودين: اكتب فيها كل دخلك الشهري، واكتب كل حاجة بتدفعها وحدّد أمامه (أصل/التزام).</li><li>اقطع أو قلل التزام واحد مش ضروري، وحوّل فرقانه لأصل (استثمار/أداة شغل).</li><li>خصص 4 ساعات شهريًا تتعلم مهارة مالية جديدة (قراءة ميزانية، أساسيات استثمار، تفاوض).</li></ol></div>
+<div class="fruit">★ النتيجة: بعد 3 شهور: وضوح كامل — عارف إيه اللي بيصرفك وإيه اللي بيصرفلك</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قايمة كل مصاريفك الحالية من دماغك، وقارنها بورقة حقيقية. <b>الأسبوع الأول:</b> حدد 3 أصول محتملة تناسب مستواك (دورة مهارة، أداة شغل، استثمار صغير). <b>الشهر الأول:</b> نفّذ أول أصل بحركة حقيقية مش مجرد نية.</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">المستثمر الذكي</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Intelligent Investor</span>
+<div class="meta">بنجامين جراهام — الكتاب اللي وارن بافيت اسماه «أعظم كتاب استثمار اتكتب» — من أعلى الكتب تقييمًا في تاريخ الاستثمار</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الاستثمار الذكي مش تخمين ولا ملاحقة أخبار، ده شراء حاجات قيمتها أكتر من سعرها بهامش أمان، والتعامل مع السوق كشخص هستيري بيبيع ويشتري مع مزاجه.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>افصل بين الاستثمار (تحليل + أمان رأس مال) والمضاربة (توقع الأسعار) — واعرف انت فيهم فين.</li><li>السوق بياع مضطرب: بييجي كل يوم يعرض عليك أسعار، مش لازم تسمعه لو مزاجه مش في صالحك.</li><li>هامش الأمان: اشتري بأقل من القيمة الحقيقية عشان غلطتك في التقدير متهدمكش.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد نوعك: مستثمر دفاعي (مؤشرات وتنويع) ولا نشيط — واكتبها كقرار.</li><li>لأي سهم أو صندوق، اكتب في ورقة: قيمته الحقيقية تقريبًا، سعره دلوقتي، والفرق بينهم.</li><li>اعمل قاعدة مكتوبة: عمر ما تبيع في هبوط عاطفي، وعمر ما تشتري في صعود جماعي.</li></ol></div>
+<div class="fruit">★ النتيجة: قرارات مالية مكتوبة على ورق مش مزاج — ده وحده بيبعد 80% من الغلطات</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قاعدتك الشخصية للاستثمار في 5 سطور. <b>الأسبوع الأول:</b> درّب تحليل قيمة على شركة واحدة بتحبها. <b>الشهر الأول:</b> طبق أول صفقة صغيرة بقاعدتك المكتوبة.</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">فكر تصبح غنيًا</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Think and Grow Rich</span>
+<div class="meta">نابليون هيل — أكتر من 100 مليون نسخة — من أكتر الكتب مبيعًا في التاريخ كله</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> كل ثروة كبيرة بدأت بفكرة واضحة + إيمان مُصمم + خطة: الرغبة المحترقة اللي بتتحول لهدف محدد وخطة تنفيذ بيبدأ الدماغ يشوف الفرص اللي قبل كده كان مشايفهاش.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الهدف الواضح: رقم محدد، تاريخ محدد، مقابل محدد — الرغبة العامة مش بتتحرك.</li><li>الإيحاء الذاتي: اللي بتقوله لنفسك كل يوم بيتحول لمعتقدات، والمعتقدات لأفعال.</li><li>المثابرة: أغلب الناس بيستسلموا عند أول فشل — اللي بيكمّل هو اللي بياخد الجايزة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب هدف مالي واحد محدد بالرقم والتاريخ (مثال: دخل إضافي X جنيه خلال 12 شهر).</li><li>اكتب خطة بسيطة 3 خطوات، ورتّبها فورًا اسمعها بصوت عالي مرتين يوميًا (صبح ومية نوم).</li><li>شكّل شلة صغيرة (Mastermind): شخص أو اتنين بيشاركوك الهدف وبتقابلوا كل أسبوع للمساءلة.</li></ol></div>
+<div class="fruit">★ النتيجة: هدف حي مكتوب بيتسام عليه كل أسبوع بدل أحلام في الهوا</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الهدف بصيغته النهائية ووقّع عليه بنفسك. <b>الأسبوع الأول:</b> رتّب أول اجتماع مساءلة مع شريك أو صاحب. <b>الشهر الأول:</b> راجع النتيجة: عدّل الخطة مش الهدف.</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">التجديد الكامل لفلوسك</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Total Money Makeover</span>
+<div class="meta">ديف رامزي — أكتر من 10 مليون نسخة — أشهر منهج عملي للتخلص من الديون</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الفلوس سلوك قبل ما تكون أرقام: خطة «الخطوات الصغيرة» المتسلسلة بتخليك تطلع من الديون وتبني ثروة بترتيب واحد واضح، خطوة خطوة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الترتيب سر النجاح: أول حاجة طوارئ صغير، بعدها الديون بالكرة الثلجية، بعدها طوارئ كامل.</li><li>كرة الديون الثلجية: سدد أصغر دين أول (حتى لو مش الأعلى فايدة) — الزخم النفسي هو المحرك.</li><li>مفيش استثمار ناجح وانت غارق في ديون استهلاك: ده سباق مlost.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اقطع الاعتمادات ومؤجل كل شراء بالدين — لو مش معاك كاش يبقى مش وقتك.</li><li>وفّر أول 1000 دولار (أو ما يعادلها) طوارئ بحركة سريعة، بعدين ثبّتها.</li><li>رتّب ديونك من الأصغر للأكبر وادفع الحد الأدنى في الكل وكل الفائض في الأصغر.</li></ol></div>
+<div class="fruit">★ النتيجة: أول دين بيتقفل كامل = الدماغ بتصدق إن الموضوع ممكن</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب كل ديونك في ورقة واحدة بأرقامها الحقيقية. <b>الأسبوع الأول:</b> وفّر أول طوارئ صغير واقفل أي كريدت جديد. <b>الشهر الأول:</b> قفل أول دين صغير كامل وكافح نفسك.</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">المليونير اللي جنب بيتك</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Millionaire Next Door</span>
+<div class="meta">توماس ستانلي — دراسة علمية لأكثر من 20 سنة على المليونيرات الحقيقيين — من أعلى الكتب تقييمًا</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> المليونير الحقيقي مش اللي بيبنز اللي بتشوفه على السوشيال — ده غالبًا واحد بيسكن جنبك، بيدخر بشراهة، وبيعيش أقل من طاقته.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>معادلة الثروة: عمرك × دخلك السنوي ÷ 10 = المفروض تكون عندك؛ اللي عنده الضعف ده غني حقيقي.</li><li>بلاش استعراض: اللي بيشترى حاجات الناس تشوفه مش بيجمّع ثروة، بيجمّل شكل.</li><li>المليونيرات غالبًا متجوزين وبيعيشوا تحت مستواهم ويوجّهوا ولادهم يبنوا نفسهم.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>احسب صافي ثروتك الحقيقي (كل اللي تملكه ناقص كل اللي عليك).</li><li>قارنه بمعادلة الكتاب، وحدد الفجوة بالأرقام مش بالإحساس.</li><li>حدد عادة استهلاك واحدة بتشتريها عشان الناس تشوفك — وقرر تمسكها.</li></ol></div>
+<div class="fruit">★ النتيجة: مقياس رقمي واضح تعرف بيه انت ماشي صح ولا بتضحك على نفسك</div>
+<div class="plan"><b>اليوم الأول:</b> اجمع أرقامك: مدخرات، أصول، ديون. <b>الأسبوع الأول:</b> اطلع بمعادلة الثروة وسجل النتيجة. <b>الشهر الأول:</b> طبّق قطع عادة الاستهلاك العاطفي واحدة كل شهر.</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">الفلوس: احكم اللعبة</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Money: Master the Game</span>
+<div class="meta">توني روبنز — أكتر من مليون نسخة — خلاصة 50 مقابلة مع أعظم مستثمرين العالم</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> أعظم مستثمرين العالم متفقين على حاجات بسيطة: التكاليف بتاكل العائد، التنويع بيجيب الأمان، والانتظام بيغلب التوقيت.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الرسوم الخفية (عمولات إدارة الصناديق) بتاكل ملايين من حياتك — اسأل دايمًا: بادي فاي كام؟</li><li>توزيع الأصول (نسبة أسهم/سندات/كاش) أهم من اختيار السهم نفسه.</li><li>لما تحس إنك مش هتعيش، بتبقى حرة تخاطر بأرباح أكتر.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اسأل عن الرسوم الحقيقية لأي منتج مالي قبل ما تدخل فيه (التكلفة السنوية بالنسبة المئوية).</li><li>اعمل توزيع أصول مكتوب حسب سنك وقدرتك على تحمل الخسارة، مش حسب مزاج السوق.</li><li>اقرأ فصل «الأنكور» (الضمانة) في الكتاب وطبق فكرة الدخل المضمون على وضعك.</li></ol></div>
+<div class="fruit">★ النتيجة: محفظة مكتوبة برسوم واضحة وتوزيع مدروس بدل فلوس راقدة بلا خطة</div>
+<div class="plan"><b>اليوم الأول:</b> حدد كل رسوم بتدفعها حاليًا في أي استثمار أو حساب. <b>الأسبوع الأول:</b> اكتب توزيع أصولك المستهدف في ورقة. <b>الشهر الأول:</b> نفّذ أول إعادة توزيع حقيقية بالورقة دي.</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">أغنى رجل في بابل</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Richest Man in Babylon</span>
+<div class="meta">جورج كلاسون — كتاب كلاسيكي من 1926 بيع لحد النهاردة بالملايين — دروس المال في قصص</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> أغنى رجل في بابل بيقول 3 حكم بسيطة: اللي بيجي لازم يخلي جزء منه معاك، واللي معاك لازم يشتغل معاك، واتعلم من اللي جرّبوا قبل ما تخسر.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>«جزء من كل اللي تكسبه هو ملكك»: ادخر 10% على الأقل قبل أي حاجة.</li><li>خلي الفلوس تشتغل: الفلوس الراكدة مش بتكبر، اللي بتشتغل بتكبر.</li><li>احمِ نفسك من الخبرة المفقودة: اسأل اللي جرّب، ومتلعبش مع حد في مجال ماتفهمش فيه.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>طبق قاعدة العُشر: أول 10% من أي دخل بيروح للادخار فورًا.</li><li>خلي الـ 10% تشتغل: تعلم مهارة، أداة إنتاج، أو استثمار بسيط متفهمه.</li><li>قبل أي خطوة مالية، اسأل واحد جرّبها فعلاً — مش خبير كلام.</li></ol></div>
+<div class="fruit">★ النتيجة: عُشر اتوماتيكي بيشتغل لوحده أول ما الفلوس تنزل</div>
+<div class="plan"><b>اليوم الأول:</b> فعّل استقطاع 10% على أول دخل جاي. <b>الأسبوع الأول:</b> حدد أول مكان تشتغل فيه العُشر. <b>الشهر الأول:</b> راجع العائد وقارنه بالشهر اللي فات.</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">هعلمك تبقى غني</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">I Will Teach You to Be Rich</span>
+<div class="meta">راميت سيتي — أشهر برنامج مالي عملي لجيل السوشيال — منهج عملي من 6 أسابيع</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> مفيش حاجة اسمها «بتحكم في فلوسك صح» وأنت بتحرم نفسك من كل حاجة: النظام الذكي هو انفاق واعي على اللي بتحبه + بخل على اللي مش بيهمك + أتمتة كل حاجة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الإنفاق الواعي: اقفل على 3 حاجات بتحبها وادفع فيها من غير ذنب، واقطع بلا رحمة في الباقي.</li><li>الأتمتة: نظام فلوس متظبوط مرة واحدة يدفع كل فواتيرك ويوفر ويعمل استثمار بدالك.</li><li>التفاوض: كل حاجة قابلة للتفاوض — البنوك والكريدت كارد والفواتير الكبيرة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>افتح حسابين: حساب مصاريف و حساب ادخار/استثمار، واظبط التحويل التلقائي بينهم.</li><li>اعمل قائمة اللي بتحبه (لوفز) وقائمة اللي مش بيهمك (هيتز) واعمل ميزانية على اساسها.</li><li>اتصل ببنكك واتفاصل على أي رسوم أو فوايد — أول مكالمة بتوضح إن الموضوع عادي جدًا.</li></ol></div>
+<div class="fruit">★ النتيجة: نظام مالي بيمشي لوحده في أقل من شهر من غير تفكير يومي</div>
+<div class="plan"><b>اليوم الأول:</b> افتح الحساب التاني واظبط أول تحويل. <b>الأسبوع الأول:</b> اقعد ساعتين اعمل قوايم اللوفز والهيتز. <b>الشهر الأول:</b> أتمت الدورة كاملة: مرتب → فواتير → ادخار → استثمار.</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">الكتاب الصغير للاستثمار الواعي</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Little Book of Common Sense Investing</span>
+<div class="meta">جون بوجل — من مؤسس Vanguard و مخترع صناديق المؤشرات — الكتاب اللي غير شكل الاستثمار</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> مستحيل غالب السوق يشتري ويبيع أسرع من السوق نفسه — لو عايز عائد السوق، خد عائد السوق كله بتكلفة أقل حاجة ممكنة: صندوق مؤشرات رخيص وطويل الأجل.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>صندوق المؤشرات بيديك عائد السوق من غير محاولة التنبؤ — والتكلفة هي المتغير الوحيد اللي بتتحكم فيه.</li><li>عمولة 1-2% مش شوية، دي بتاكل ثلث أرباحك على 30 سنة.</li><li>اشترِ واستمر: البوش والتايم للسوق بيخسروا دايمًا في المدى الطويل.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>لوم عندك أي استثمار، اسأل: التكلفة السنوية بالنسبة المئوية كام؟</li><li>حدد نسبة من دخلك (مثلاً 10-15%) تروح لصندوق مؤشرات واسع كل شهر.</li><li>اكتب تعهد بعدم البيع وقت أي هبوط — وثبته في حتة تبص عليها.</li></ol></div>
+<div class="fruit">★ النتيجة: محفظة واحدة بسيطة رخيصة عمرها ما بتكسرك وقت خبرة تفاصيل</div>
+<div class="plan"><b>اليوم الأول:</b> حدد التكلفه الحقيقية لأي استثمار حالي. <b>الأسبوع الأول:</b> اختار صندوق مؤشرات واحد يناسبك ودرس شروطه. <b>الشهر الأول:</b> ابدأ أول استثمار شهري ثابت واربطه بمصدر دخل.</div>
+</div></div></section><section class="sec" id="sec-mindset">
+<div class="sec-head"><div class="sn">◆ القسم 2 من 6 ◆</div><h2>تطوير النفس</h2><p>عقلك: وثقتك بذاتك وإيمانك بقدرتك</p></div>
+<div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">العادات السبع للناس الأكثر فاعلية</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The 7 Habits of Highly Effective People</span>
+<div class="meta">ستيفن كوفي — أكتر من 40 مليون نسخة — أشهر كتاب تطوير ذات في التاريخ</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> التغيير الحقيقي بيتحرك من جوه لبره مش العكس: كل عادة من السبع بتبني الثانية اللي بعدها، من الاستقلال الشخصي للنجاح الجماعي.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>كن استباقي: مسؤول يعني تقدر تكتب رد فعلك، مش العكس — اللي جواك مش كل اللي حواليك.</li><li>ابدأ والنهاية في دماغك: كل حاجة بتتعمل مرتين، مرة في دماغك ومرة في الواقع.</li><li>أول الأولويات: رتّب حياتك على مصفوفة المهم/الطارئ واعمل المهم قبل ما يبقى طارئ.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>خد أسبوع كامل سجل فين بيت وقتك فعليًا في مصفوفة المهم/غير المهم.</li><li>اكتب بيان شخصي لـ5 سطور: انت عايز تبقى إيه ولية، وعلقه قدامك.</li><li>في أول يوم شغل كل أسبوع، حدد أهم مهمتين واتّمهم قبل أي حاجة تانية.</li></ol></div>
+<div class="fruit">★ النتيجة: إحساس واضح انك انت اللي بتمسك يومك مش اليوم اللي بيمسكك</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب بيانك الشخصي بخط إيدك. <b>الأسبوع الأول:</b> طبّق «ابدأ بأهم مهمة» 5 أيام شغل متتالية. <b>الشهر الأول:</b> راجع الـ7 عادات وحدّد واحدة ضعيفة للتركيز الشهري.</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">العقلية</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Mindset</span>
+<div class="meta">كارول دويك — بحث علمي من ستانفورد غيّر فهم العالم للنجاح — تقييم 4.1/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> في نوعين عقلية: ثابتة (الشطارة حاجة مولودة) ونامية (الشطارة اتبني بالممارسة) — والفرق بينهم هو الفرق بين حد بيتوقف عند أول غلط وحد بياخد الغلط معلومة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>اللي بعقلية نامية بيشوف المجهود طريق النجاح، والثابتة بيشوفه عيب يفضحه.</li><li>كلمة «لسه» (Not Yet) بتغير كل حاجة: انا لسه شاطر مش انا مش شاطر.</li><li>المدح الغلط بيبوّظ: امديح الذكاء بيخلي الناس تخاف من التحدي، امديح المجهود بيخليهم يطلبوه.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>سجّل خلال أسبوع كل مرة تقول فيها «انا مش بتعمل كذا» وحولها لصيغة «انا لسه...».</li><li>اختار مهارة انت «مقتنع» انك مش بتتعلمها، واعمل فيها 30 دقيقة تدريب أسبوعيًا.</li><li>لما تمدح حد (ولد أو زميل)، امدح الطريقة والخطوات مش النتيجة أو الذكاء.</li></ol></div>
+<div class="fruit">★ النتيجة: خوف اقل من الغلط + محاولة حاجات كنت هترفضها من غير تفكير</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب 3 عبارات «انا مش...» بتقولها لنفسك وصلحها. <b>الأسبوع الأول:</b> طبّق تدريب الـ30 دقيقة على مهارة مؤجلة. <b>الشهر الأول:</b> قيس: فين بقيت تقبل تحديات كنت بتهرب منها؟</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">الشجاعة والإصرار</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Grit</span>
+<div class="meta">أنجيلا داكوورث — أشهر بحث علمي عن المثابرة — تقييم 4.1/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الموهبة وحدها مش بتكمل: النجاح = الشغف + المثابرة على مدى سنين، والمثابرة دي مش حاجة مولودة، دي بتتدرب بالاهتمام والتدريب والهدف والامل.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الممارسة الواعية (Deliberate Practice): تدريب مركّز على نقطة ضعف واحدة، مش تكرار عادي.</li><li>المثابرة بتكبر لما يكون ليه هدف أعلى من نفسك (عشان تاني، عشان بيتك، عشان رسالة).</li><li>الملل من المجهود طبيعي — الـGrit مش انك متزهقش، انك تكمل مع الزهق.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد هدف بقاء لـ10 سنين فوق هدفك اليومي (منين عايز تكون؟).</li><li>طبّق تدريب واعي: 45 دقيقة على أصعب جزء في شغلك مع مراجعة أخطاء يوميًا.</li><li>اكتب قائمة «الهارد ثينج» — حاجات بتعملها كل يوم مش بتحبها بس بتصقل.</li></ol></div>
+<div class="fruit">★ النتيجة: مجهود يومي متراكم بيظهر نتايجه بعد شهور مش بعد ساعة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب هدف الـ10 سنين في ورقة. <b>الأسبوع الأول:</b> ظبط أول روتين تدريب واعي 3 أيام. <b>الشهر الأول:</b> راجع التقدم بالأرقام وعدّل التدريب مش الهدف.</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">سحر التفكير الكبير</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Magic of Thinking Big</span>
+<div class="meta">ديفيد شوارتز — أكتر من 6 مليون نسخة — كلاسيكية الثقة بالنفس</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> حجم تفكيرك بيبني حجم حياتك: اللي بيفكر صغير بياخد نتايج صغيرة مش لان الاقدار ضدة، لكن لان دماغه مبرمجة على الحاجات الصغيرة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الحركة بتشفي الخوف: أول خطوة في أي حاجة بتخبيك بتقلل رعبها فورًا.</li><li>اللي بيسأل سؤال «كيف أقدر؟» بياخد أفكار، واللي بيقول «مش ممكن» بياخد صفر.</li><li>خليك في وسط ناس بتكبرك: أقرب 5 أشخاص حواليك بيرسموا سقف تفكيرك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب هدف تخاف تكتبه أصلاً، وبعدين اكتب تحته أول خطوة صغيرة ممكن تتعمل بكرة.</li><li>لما تقابل أي حاجة صعبة، غيّر السؤال من «هل ينفع؟» لـ«إزاي ينفع؟» واكتب جواب واحد على الأقل.</li><li>قابل شخص متفوق في مجالك مرة شهريًا واسأله عن مساره.</li></ol></div>
+<div class="fruit">★ النتيجة: سقف أعلى لطموحك وخطوة فعلية في حاجة كنت مؤجلها بالرعب</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الهدف الكبير اللي مكتوبش قبل كده. <b>الأسبوع الأول:</b> نفّذ أول خطوة صغيرة منه مهما كانت بسيطة. <b>الشهر الأول:</b> راجع: الهدف كبر ولا قل بعد أول تحرك؟</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">إيقاظ العملاق جواك</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Awaken the Giant Within</span>
+<div class="meta">توني روبنز — أكتر من 15 مليون نسخة — أشهر كتاب عن إدارة الحالة النفسية</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> انت مش مزاجك ولا ظروفك — انت القرارات: المعتقدات والقواعد اللي في دماغك هي اللي بتحدد تعمل إيه وقت الضغط، ودول حاجات تتعلم وتتغير.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>كل قرار بيتحكم فيه مبدأين: تربح متعة ولا تهرب من ألم — غيّر التربيط (لينك) بيتغير السلوك.</li><li>المعتقدات مش حقايق: المعتقد اللي بيشدك لقدام ثمنه انه يخلص معاك نتيجة.</li><li>اللحظة بتتحكم فيها: وضعك النفسي (Posture/Focus/Language) بيتغير في ثواني لو عرفت أزراره.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب قائمة معتقدات بتشدك لقدام و3 بتخنقك، وحدد واحدة منهم تحب تبطلها بكرة.</li><li>صمّم «حالة النصر»: وقفة الجسم + سؤال تركيز + جملة قوة — جرّبها قبل أي موقف صعب.</li><li>قبل أي قرار مهم اسأل نفسك: انا بجري من إيه ولا بجري على إيه؟</li></ol></div>
+<div class="fruit">★ النتيجة: تحكم أكبر في مزاجك قبل المواقف مش بعدها</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب القائمتين وحط علامة على المعتقد المطلوب تغييره. <b>الأسبوع الأول:</b> طبّق «حالة النصر» قبل 3 مواقف صعبة. <b>الشهر الأول:</b> اختبر المعتقد الجديد: شن الثمار اللي طلعت منه؟</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">مش قادر يوجعني</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Can't Hurt Me</span>
+<div class="meta">ديفيد جوجينز — أكتر من 5 مليون نسخة — أشهر قصة تحدي نفسي حقيقية</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> دماغك بتوقفك عند 40% من طاقتك الحقيقية: الحاجز مش جسمك، ده المفاوض اللي جواك — وقدرة تحمل الألم عندك بتقوى بالتكرار زي أي عضلة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>قاعدة الـ40%: أول ما تقول «خلصت»، انت في أول 40% من جهدك الفعلي.</li><li>مراية المساءلة: اكتب حاجاتك المقبولة بلا أعذار وقراها لنفسك كل يوم.</li><li>الكالوس الذهني: تدريب متعمد على الشدة الصغيرة (برد، مشي، ديسبلين) بيقهر الشدة الكبيرة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>افتح مذكرة المساءلة: اكتب أهدافك ومستواك الحالي بصدق مرعب، وقراها كل صبح.</li><li>ختار شدة صغيرة يوميًا (مشي/رياضة/برد) واعملها من غير مفاوضة.</li><li>لما دماغك تقول «استحملت كفاية»، كمّل 10% زيادة بس — واكتبها.</li></ol></div>
+<div class="fruit">★ النتيجة: طاقة مش متخيلة قبل كده + صوت داخلي اتغير من مستحيل لـ«كمّل»</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب ورقة المساءلة الأولى بصدق كامل. <b>الأسبوع الأول:</b> التزم بالشدة الصغيرة 5 أيام بلا استثناء. <b>الشهر الأول:</b> قيس بجد: ايه اللي بقى سهل اللي كان مستحيل؟</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">الإنسان يدور عن معنى</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Man's Search for Meaning</span>
+<div class="meta">فيكتور فرانكل — أكتر من 16 مليون نسخة — من أشهر كتب القرن العشرين</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> اللي عاش معسكرات النازي بيقول: اللي بياخد منك كل حاجة بيبقى قادر يمسك موقفه من الحياة — المعنى مش موجود، المعنى بيتصنع.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>بين المحفز والاستجابة في مساحة صغيرة فيها حريتك الكاملة — ولا الظروف ولا الماضي بيمسكوا الموقف.</li><li>المعنى بيتلقى في 3 حتات: شغل/مهمة، حب لحد، والموقف من معاناة مش متوقعة.</li><li>اللي عنده «ليش» يعيش ليه، بيتحمل أي «إزاي» — الكلمة دي بتكفي وحدها.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب في ورقة: ايه الحاجة اللي حياتك فيها معناها بسببها؟ (شغل، حد بيحبك، رسالة).</li><li>في أي ضربة، اسأل نفسك: «الحياة بتسألني إيه دلوقتي؟» بدل «ليه أنا؟».</li><li>حدد مهمة صغيرة لحد تاني (مساعدة/إنتاج) واعملها الأسبوع ده.</li></ol></div>
+<div class="fruit">★ النتيجة: قوة داخلية تفرق بين «الظروف وحشة» و«مش هسيبها تحكم رد فعلي»</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب ورقة المعنى بتاعتك. <b>الأسبوع الأول:</b> طبّق سؤال «الحياة بتسألني إيه؟» في أول ضربة تجيك. <b>الشهر الأول:</b> راجع مذاكرتك للمعنى وثبته في مكان ثابت.</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">قوة اللحظة الحاضرة</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Power of Now</span>
+<div class="meta">إيكهارت تول — أكتر من 3 مليون نسخة وأشهر كتاب عن الحضور الذهني</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> أغلب الم фанا عندنا من التفكير في الماضي والمستقبل — العقل بيفضل يعيد ويخطط، لكن الحياة حقيقية بس في اللحظة دي، والهدوء بيرجع لما تبص لعقلك بWatch مش تشاركه.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>انت مش افكارك: المراقب الصامت جواك هو انت الحقيقي، والأفكار مجرد ضوضاء بتعدي.</li><li>المقاومة بتعمل الألم: أي حاجة بترفضها بتكبر، واي حاجة بتبص لها بقبول بتخف.</li><li>الجسم بوابة للحضور: حس تنفسك أو جسمك في أي لحظة ضغط عشان ترجع للدلوقتي.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>خد 5 مرات في اليوم 3 نفسات واعية: ملاحظة بس، من غير تعديل.</li><li>لما عقلك يعيد مشهد قديم أو قلق جاي، قول داخليًا: «ده صوت، مش انا» — وارجع للحس.</li><li>حدد نشاط واحد يومي (أكل/مشي/دش) تعمله بحضور كامل 7 أيام.</li></ol></div>
+<div class="fruit">★ النتيجة: ثواني هدوء حقيقية في وسط الضغط بدل دوامة أفكار بتلف</div>
+<div class="plan"><b>اليوم الأول:</b> طبّق الـ3 نفسات 5 مرات النهاردة. <b>الأسبوع الأول:</b> التزام نشاط الحضور الكامل 7 أيام. <b>الشهر الأول:</b> قيس عدد المرات اللي بترجع بيها للحاضر بسرعة.</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">الإنسان كما يفكر</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">As a Man Thinketh</span>
+<div class="meta">جيمس ألين — كتاب صغير من 1903 بيع للملايين — أصل فكرة الأفكار بتصنع الظروف</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الظروف مش بتعمل الإنسان، بتكشفه: حد دماغه مليان أفكار محددة و نظيفة بيلاقي نفسه مع الوقت في حياة مشابهة لأفكاره — التفكير جوه بيبني بره.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الفكر كالبستان: ليه بتفكر فيه بيبقى حياتك، ليه بتهمله بيبقى حشيش.</li><li>الجسم بيتبع الفكر: صحة أضعف مع أفكار أضعف — مش خرافة، ده إدارة.</li><li>الهدف بيهدي الفكر: اللي عنده هدف واضح عقله بيتصف من الفوضى تلقائيًا.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>سجل أفكارك المكررة يوم كامل بلا فلترة — عايز تشوف البستان الحقيقي.</li><li>حدد فكرتين سامتين بتتكررا، واستبدل كل واحدة بجملة بديلة مكتوبة.</li><li>خمس دقايق صبح قبل الموبايل: فكر في اللي عايز تبنيه اليوم بمنتهى الوضوح.</li></ol></div>
+<div class="fruit">★ النتيجة: عقل مرتب بدل دوامة — وحاجات بتتظبط فعلاً بحكم التركيز</div>
+<div class="plan"><b>اليوم الأول:</b> سجل أفكار يوم كامل في مذكرة. <b>الأسبوع الأول:</b> طبّق الاستبدال المكتوب للفكرتين السامتين. <b>الشهر الأول:</b> راجع المذكرة: ايه اللي اتغير في نص كلامك مع نفسك؟</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">أعمدة تقدير الذات الستة</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Six Pillars of Self-Esteem</span>
+<div class="meta">ناثانيل براندن — الكتاب المرجعي في علم احترام الذات من أشهر عالمي المجال</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> تقدير الذات مش شعور، ده استعداد مكتسب من 6 ممارسات يومية: الوعي، القبول، المسؤولية، التعبير، الغاية، والأمانة — يشتغلوا زي عضلات.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>تقدير الذات بيتبني بالممارسة مش بالكلام الحلو: كل عمود تمرين مش معلومة.</li><li>المسؤولية هي الأصل: «انا اللي مسؤول عن حياتي» هي الجملة المفتاحية لكل تقدم.</li><li>عيش بوعي: اللي بيمشي في حياته أوتوماتيك مش بيبني ذات قوية.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>كل يوم سؤال صبح: «لو كنت واعي بضبط، كنت هعمل إيه دلوقتي؟» — وبعدين اعملها.</li><li>في أي موقف، طبّق «لو حد غيري عمل اللي انا عاملها، هقول إيه له؟» عشان تقيس مسئوليتك.</li><li>اكتب 3 حدود (نوع معاملة/شغل/علاقة) وتعلم تقول «لا» فيها بأدب وبوضوح.</li></ol></div>
+<div class="fruit">★ النتيجة: احترام ذات بيتتبنى بالأفعال مش بالمدح الفاضي</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الـ3 حدود وقراها بصوت عالي. <b>الأسبوع الأول:</b> طبّق سؤال الوعي الصبحي 7 أيام. <b>الشهر الأول:</b> راجع: فين طبقت المسؤولية ووين هربت منها؟</div>
+</div></div></section><section class="sec" id="sec-mgmt">
+<div class="sec-head"><div class="sn">◆ القسم 3 من 6 ◆</div><h2>إدارة الأعمال كمدير</h2><p>قيادتك: إدارة الناس والنتايج كأنك المدير</p></div>
+<div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">من الجيد للعظيم</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Good to Great</span>
+<div class="meta">جيم كولينز — أكتر من 4 مليون نسخة — دراسة 11 شركة عدت من متوسطة لعظيمة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الشركات العظيمة مش بتتبني بقرارات مجنونة، بتتبني بقرارات منضبطة: القيادة المتواضعة، الناس الصح قبل الاستراتيجية، ومفهوم التفكير الواحد الواضح.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>القائد الخامس: تواضع شخصي + إرادة مهنية محترفة — القيادة الحقيقية مش الكاريزما.</li><li>اللي الأول بعدين الكيف: خلي الناس الصح في الأتوبيس قبل ما تحدد فين رايح.</li><li>مفهوم القنفذ: تقاطع 3 دوائر (بتعشقه، الأفضل فيه، اللي بيدفع) هو بوصلة كل قرار.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب 3 دوائر شركتك/قسمك على ورقة، وحدد نقطة تقاطعهم في جملة واحدة.</li><li>لأي قرار كبير: اعمل قائمة «ننضبط ولا نوقف» (Stop Doing) قبل قائمة «نعمل».</li><li>في التوظيف القادم: أدخل على الشخص قبل الكلمة الوظيفية — الناس الصح الأول.</li></ol></div>
+<div class="fruit">★ النتيجة: وضوح استراتيجي في جملة واحدة — وقرارات بتبان مربوطة لبوصلة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب جملة القنفذ بتاعتك/قسمك. <b>الأسبوع الأول:</b> اعمل قائمة الأشياء المطلوب التوقف عنها واعتمدها. <b>الشهر الأول:</b> طبّق أول توظيف/مهمة بمعيار «الناس الأول».</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">المدير التنفيذي الفعال</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Effective Executive</span>
+<div class="meta">بيتر دراكر — الكتاب المؤسس لعلم الإدارة الحديث من أعظم مفكر إداري في التاريخ</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> المدير الفعال مش اللي بيشتغل كتير، ده اللي بيعرف: وقت بيتسجل، مساهمات بتركيز، قوة ناس بتستغل، وقرارات قليلة بس مبنية صح.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الوقت هو المورد الوحيد اللي مبيتجددش: اللي مش بيقيسه مش بيديره.</li><li>الأولوية الحقيقية: اعمل الأول حق الأول (First Things First) وركّز على مساهمة واحدة.</li><li>اقتصار القرارات: قرار واحد عالي الجودة كل فترة أفضل من عشر قرارات متوسطة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>سجل وقتك 3 أيام متواصلة بالدقيقة، وبعدين احذف/فوّض/قلل الثلث اللي بيتاكل.</li><li>حدد كل يوم صباحًا «أهم مساهمة» واحدة من المفروض تخرج منك النهاردة.</li><li>لأي مشكلة متكررة: اكتب سياسة (Standard) بدل ما تدير الحالة كل مرة.</li></ol></div>
+<div class="fruit">★ النتيجة: 3 أيام من وقتك محسوبة بصدق — وعادة اجتماعية بتوفر ساعات أسبوعيًا</div>
+<div class="plan"><b>اليوم الأول:</b> ابدأ سجل الوقت اليوم. <b>الأسبوع الأول:</b> اقطع التزام واحد مفيش منه فايدة وصرح بيه رسمي. <b>الشهر الأول:</b> اكتب أول سياسة مكتوبة لعملية متكررة.</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">مدير الدقيقة الواحدة</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The One Minute Manager</span>
+<div class="meta">كينيث بلانشارد — أكتر من 15 مليون نسخة — أشهر كتاب خفيف في الإدارة العملية</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الإدارة الفعالة ممكن تكون بسيطة جدًا: أهداف واضحة في دقيقة، مدح فوري في دقيقة، وتصحيح فوري في دقيقة — التوقيت أهم من الإطالة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>أهداف الدقيقة: اكتب كل هدف في نصف صفحة، خلّي الفريق يقروا يوميًا عشان يعرفوا بيشتغلوا على إيه.</li><li>المدح الفوري: امسك السلوك الصح لحظة حصوله وقله بوضوح — المدح المتأخر بيخسر قيمته.</li><li>التصحيح الفوري: صحح الفعل مش الشخص، وختم بأن قيمته للفريق حقيقية.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب أهداف فريقك كل واحد في نصف صفحة قصيرة، واعمل مراجعة أسبوعية مع كل واحد.</li><li>في أول سلوك صح تشوفه بكرة: امنحه مدح دقيقة على الفور بصوت واضح.</li><li>في أول غلطة: تصحيح في نفس اليوم بصيغة «الفعل + التصحيح + قيمة الشخص».</li></ol></div>
+<div class="fruit">★ النتيجة: فريق عارف أهم أهدافه بالاسم — وتوقيت تعاملك معه بقى فيدباك مش سكوت</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب أول هدف بتنسيق الدقيقة الواحدة ووزعه. <b>الأسبوع الأول:</b> طبّق مدح دقيقة 3 مرات وتصحيح دقيقة مرة. <b>الشهر الأول:</b> راجع مع الفريق: الأهداف اتضحت ولا لسه؟</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">كسر كل القواعد الأول</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">First, Break All the Rules</span>
+<div class="meta">ماركوس باكنجهام — دراسة جالوب على 80 ألف مدير — أشهر بحث عن المديرين العظماء</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> المديرين العظماء مش بيدوا الناس فرص متساوية — بيشتغلوا على نقاط القوة: مهمتهم مش تصلح الضعف، مهمتهم تعظيم اللي بيتفوق فيه كل واحد.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الـ12 سؤال (المقياس الشهير) بيقيسوا قوة مكان الشغل — أهمها: عارف المطلوب مني، وعندي الموارد، ورأيي بيهتم.</li><li>الناس مش بتتغير كتير: وظّف شخصية كل واحد صح، مش تحاول تبني شخصية جديدة.</li><li>كل أسبوع تركيز: وقت مع النجم لحد متفوق فيه، مش وقت متساوي مع الكل.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اعمل قياس سريع لفريقك بالـ12 سؤال (نتيجة 1-5 لكل سؤال) وشوف أضعف سؤالين.</li><li>حدد لكل فرد في فريقك أهم قوة عندة، وأعطه مهام بتستغلها فورًا.</li><li>أعد توزيع مهمة ضعيفة الأداء لشخص قوته فيها أقوى بدل تدريب عبثي.</li></ol></div>
+<div class="fruit">★ النتيجة: فريق أقوى من غير تدريب جديد — بحكم توزيع الناس على مزاياهم</div>
+<div class="plan"><b>اليوم الأول:</b> اعمل الـ12 سؤال لنفسك أول. <b>الأسبوع الأول:</b> وزعها على الفريق واعمل خريطة القوة. <b>الشهر الأول:</b> أعد توزيع مهمتين حسب الخريطة وقيس الأثر.</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">القوانين الـ21 للقيادة</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The 21 Irrefutable Laws of Leadership</span>
+<div class="meta">جون ماكسويل — أكتر من 3 مليون نسخة — أشهر منهج قيادة تدريبي في العالم</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> القيادة مش منصب، دي تأثير: القوانين زي قانون الجاذبية شغالة وانت عارفها أو لأ — أهمهم قانون الغطا (سقف قدرتك في التنظيم هو سقف فريقك).</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>قانون الغطا (The Lid): قدرة القائد هي السقف الحقيقي لكل الأرقام تحته.</li><li>قانون التأثير: الناس بتتبع اللي بتثق فيه وبتشوفه قدامهم، مش صاحب المنصب.</li><li>قانون العملية: القيادة بتتعلم يوميًا بالتراكم — مفيش قائد بينام على الليلة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد أضعف قانون عندك من الـ21 (اسأل فريقك: أجاباتهم أصدق من رأيك).</li><li>اعمل خطة قيادة أسبوعية: ساعة تعلم + موقف تطبيق + مراجعة.</li><li>اقتني كتاب/بودكاست قيادة واحد شهريًا وطبق منه فكرة واحدة بس.</li></ol></div>
+<div class="fruit">★ النتيجة: وعي بقدرتك: فين سقفك الحالي وأي قانون بيسقف شركتك فعلًا</div>
+<div class="plan"><b>اليوم الأول:</b> اسأل 3 أشخاص في فريقك: «شن أكثر حاجة محتاجة أطورها كقائد؟». <b>الأسبوع الأول:</b> ابدأ ساعة التعلم الأسبوعية الأولى. <b>الشهر الأول:</b> راجع الأثر: الأرقام بتتكلم عن القيادة أسرع من الكلام.</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">القادة ياكلون آخرًا</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Leaders Eat Last</span>
+<div class="meta">سايمون سينك — من صاحب أشهر محاضرة قيادة في التاريخ (Start With Why) — تقييم 4.3/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> القائد العظيم بيحمي فريقه قبل ما يحمي نفسه: دايرة الأمان بتفعّل كيمياء الثقة والتعاون (سيروتونين/أوكسيتوسين)، وخارجها الناس بتتحول لخوف وتنافس داخلي.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>دايرة الأمان: لما الفريق حاسس ان حد بيمسك خطرة، الطاقة بتروح للشغل مش للدفاع.</li><li>القائد بياخد المخاطرة على عاتقه: أول من يتحمل، آخر من يستفيد.</li><li>الثقة بتتراكم بالصغائر: الوفاء بالمواعيد، المكاشفة في الأزمات، والثبات في الضغط.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اسأل فريقك: «انتو حاسين بالأمان هنا بقد إيه؟» وخد الإجابة من غير دفاع.</li><li>في أول أزمة قادمة: اصدع بالحقيقة كاملة قدام الفريق قبل ما يعرفوا من بره.</li><li>خد قرار واحد لصالح الفريق على حساب راحتك الشخصية، واعملها بوضوح.</li></ol></div>
+<div class="fruit">★ النتيجة: ناس بتشتغل من غير خوف — دي أقوى موتور إنتاج في أي مؤسسة</div>
+<div class="plan"><b>اليوم الأول:</b> اعمل جلسة «مقياس الأمان» مع فريقك. <b>الأسبوع الأول:</b> نفّذ المكاشفة في أول موقف حقيقي. <b>الشهر الأول:</b> قيس: المشروعات بتتحرك أسرع بعد الأمان ولا لأ؟</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">الإدارة عالية الإنتاجية</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">High Output Management</span>
+<div class="meta">أندي جروف — من الرئيس التنفيذي التاريخي لإنتل — الكتاب اللي Silicon Valley بتقرأه</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> إنتاج المدير = إنتاج فريقه تحت إدارته + إنتاج الفرق اللي بيوّثر عليها: الإدارة مش مهارة معنوية، دي هندسة انتاج ليها مدخلات ومخرجات.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الرفع الإداري (Leverage): كل نشاط بيتقاس برفعيته — 1:1 ساعة واحدة مع موظف ممكن توفر 40 ساعة.</li><li>الاجتماعات مش عبء، دي أدوات إنتاج: الاجتماع الصح جوا وله هدف واحد محدد.</li><li>الـ1:1 الأسبوعية أقوى أداة: أسئلة مفتوحة، استماع، وتصحيح مبكر قبل ما المشاكل تكبر.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>ظبط 1:1 أسبوعية 30 دقيقة مع كل فرد مباشر — بأجندة واحدة: شغلك، وعوائقك، وتطويرك.</li><li>سجل اجتماعاتك أسبوع وقيس: أي اجتماع مخرجه أقل من وقته، الغيه أو صغره.</li><li>اكتب لكل مهمة كبيرة: المدخل، المخرج المطلوب، والخطوة اللي بتمنع التأخير.</li></ol></div>
+<div class="fruit">★ النتيجة: نظام إداري بيشتغل حتى في غيابك — والفريق بيتحرك بدل ما ينتظر أوامر</div>
+<div class="plan"><b>اليوم الأول:</b> رتّب جدول الـ1:1 الشهر القادم كامل. <b>الأسبوع الأول:</b> نفّذ أول جولة 1:1 وخد ملاحظات كل واحد. <b>الشهر الأول:</b> راجع الاجتماعات: خسرت كام ساعة؟ وفرتها فين؟</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">كيف تكسب الأصدقاء وتؤثر في الناس</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">How to Win Friends and Influence People</span>
+<div class="meta">ديل كارنيجي — أكتر من 30 مليون نسخة — أشهر كتاب علاقات في التاريخ</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الناس مش بتحب اللي بيتكلم كتير، بتحب اللي بيسمعهم ويحترمهم: أغلب مشاكل التعامل بتتحل بسياسة «اهم دايمًا حاجة التاني مش بتاعتك».</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الاهتمام الصادق أقوى من الذكاء الاجتماعي: اتكلم عن اللي بيهم محدثك مش عن نفسك.</li><li>اسم الشخص أجمل صوت بيسمعه الإنسان: خليه يطلع في أول كل حوار.</li><li>لو غلطت، اعترف بسرعة وبقوة — الاعتراف السريع بيقلل العقوبة والاحترام بيزيد.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>في أول 3 محادثات بكرة: امسك نفسك عن الحديث عن نفسك واسأل عن محدثك.</li><li>استخدم اسم كل واحد في أول جملة (بأدب طبيعي) وشوف الفرق.</li><li>لما تغلط قل: «انا غلطت في كذا والصح كذا» من غير تحويل ولا أعذار.</li></ol></div>
+<div class="fruit">★ النتيجة: علاقات أقوى وأسهل — الناس بتفتح لك أبواب لأنها بتحس باحترامك</div>
+<div class="plan"><b>اليوم الأول:</b> طبّق قاعدة «اسأل عن محدثك» في 3 محادثات. <b>الأسبوع الأول:</b> راجع: مين غير رأيه فيك للأحسن؟ <b>الشهر الأول:</b> اعمل جرد علاقاتك: مين محتاج اهتمام بعتته عليه دايمًا؟</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">الصراحة الراديكالية</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Radical Candor</span>
+<div class="meta">كيم سكوت — أشهر كتاب حديث في الفيدباك الإداري — منهج المستشفى العام (Silicon Valley)</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الفيدباك العالي شغله سلسلتين لازمين مع بعض: اهتم شخصي + تحدٍّ مباشر — لو واحد فيهم غاب، بتقع في أكذب (المجاملة الكاذبة) أو العنف (الصراحة الوحشية).</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>4 أرباع: الصراحة الراديكالية، المجاملة الكاذبة، الافتراء المزيف، والعدوانية — عرف موقعك.</li><li>الاهتمام الشخصي مش صغير: اعرف حياة شغلتك، مش تتدخل في حياتهم.</li><li>التحدي المباشر صالح في الاتجاهين: قبل ما تدّي فيدباك، اعمل دايرة بتتقبله من فريقك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد موقعك الحقيقي على شبكة الصراحة/الاهتمام من آراء فريقك.</li><li>اذهب لأصعب محادثة بتأجلها — بالصيغة: «عشان اهتم بيك، لازم اقولك...».</li><li>اطلب من فريقك فيدباك صريح عنك أول، ورد بس بـ«شكرًا، هنشوف».</li></ol></div>
+<div class="fruit">★ النتيجة: فيدباك ماشي في الاتجاهين — والفريق بيصلح مشاكله بدل ما تتنشف تحتها</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب أصعب 3 محادثات بتأجلها. <b>الأسبوع الأول:</b> عمل أول واحدة بالصيغة المكتوبة. <b>الشهر الأول:</b> اعمل جلسة فيدباك مقلوبة: الفريق يقيمك انت.</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">المضاعفون</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Multipliers</span>
+<div class="meta">ليز وايزمان — بحث على 150 مدير من أعظم الشركات — أشهر كتاب حديث عن استغلال العقول</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> في نوعين مدير: المضاعف (بيخلي ذكاء الناس يتضاعف) والمقلل (Diminisher: بيسحب الطاقة والذكاء من حواليه) — والفرق في سلوك يومي مش موهبة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>مغناطيس المواهب: المضاعف بيشيل ألمع الناس ويعرف يستغلهم، مش يخاف منهم.</li><li>المحرر (Liberator): بيدي مساحة صعبة وبيئة تسمح بالخطأ في سبيل التعلم.</li><li>التحدّي الكبير: المضاعف بيرمي تحدي كبير مستحيل ظاهريًا — بيطلع أفضل ما عند الناس.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد سلوك واحد من سلوك المقللين عندك (الحلول الجاهزة، الاجتماعات الديكتاتورية، التدخل الدائم).</li><li>في أول مشكلة قادمة: اسأل أسئلة صعبة بدل ما تدّي جوابك — خلي الفريق يستنتج.</li><li>اعط تحدًى كبير واحد للفريق بموارد قليلة ووقت واضح — وبعدين اطلع من السكة.</li></ol></div>
+<div class="fruit">★ النتيجة: فريق بيتفكر ويحل مش ناس مستنية اوامرك — وذكاء المجموعة بيتضاعف فعلاً</div>
+<div class="plan"><b>اليوم الأول:</b> حدد سلوك المقلل عندك واكتب بديله. <b>الأسبوع الأول:</b> طبّق قاعدة «اسأل مش تحل» في أول مشكلة. <b>الشهر الأول:</b> قيس: عدد الحلول الجاية من الفريق بقى اكبر ولا اقل؟</div>
+</div></div></section><section class="sec" id="sec-income">
+<div class="sec-head"><div class="sn">◆ القسم 4 من 6 ◆</div><h2>اربح أكتر</h2><p>دخلك: طرق زيادة الفلوس من غير ما تتضاعف ساعاتك</p></div>
+<div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">أسبوع العمل بأربع ساعات</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The 4-Hour Workweek</span>
+<div class="meta">تيم فيريس — أكتر من 2 مليون نسخة — الكتاب اللي أطلق حركة Lifestyle Design</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الهدف مش تتجمع لك مليون وانت شغال 80 ساعة أسبوعيًا، الهدف تصميم حياة: اقليل (Eliminate) المش عالمهم، أتمتة (Automate)، وتفويض (Delegate) الباقي — والدخل بيتصمم حوالين حياتك.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>قاعدة 80/20 (باريتو): 80% من نتايجك بتيجي من 20% من مجهودك — امسك الـ20.</li><li>الإزالة قبل التنظيم: مهمة ملغية أحسن من مهمة متظبطة — قلل قبل ما تحسن.</li><li>التفويض الآمن: اللي بيعمل تاني مره بروتوكول مكتوب (SOP) بيتفوض لم حد بأرخص من وقتك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>سجل مهامك أسبوع، حدد أعلى 20% بتجيب نتايج، وحلل أو الغِ الباقي.</li><li>اكتب SOP واحد لمهمة متكررة (خطوات مكتوبة) وسلمها لحد (شغل/فريلانسر/أداة).</li><li>حدد وقتك الحقيقي بالساعة، وقرر تستغل ساعة واحدة منه في دخل إضافي مش مرتب اكبر.</li></ol></div>
+<div class="fruit">★ النتيجة: ساعات بتتراجع بالأرقام — والدخل بيفضل ثابت أو يزيد</div>
+<div class="plan"><b>اليوم الأول:</b> سجل كل مهام اليوم بالتفصيل. <b>الأسبوع الأول:</b> اقطع/فوض 3 مهام مش من الـ20%. <b>الشهر الأول:</b> قيس الوقت الموفر واستثمره في مصدر دخل تاني.</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">أسرار عقلية المليونير</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Secrets of the Millionaire Mind</span>
+<div class="meta">ت. هارف إيكر — من أشهر كتب برمجة المال النفسية — ملايين النسخ عالميًا</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> كل واحد عنده «مخطط مالي» (Blueprint) اتبرمج في الطفولة: عقلك الباطني بيرجع دايمًا لمستواه المبرمج — عايز تغير دخلك، غيّر المخطط الأول.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>مخططك المالي من طفولتك بيتحكم في سقف دخلك من غير ما تحس.</li><li>17 ملف (Wealth Files): طريقة المليونير عكس الشائع — مثلاً «اشتغل عشان صافي» مش «اشتغل بالساعة».</li><li>الوعي قبل الفلوس: اللي بيطبق على مستواه النفسي بيزيد دخله تلقائيًا بمرور الوقت.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب 3 عبارات سمعتها في طفولتك عن الفلوس (من أهلك/المجتمع) وحدد مخططك منها.</li><li>اختار ملف واحد من الملفات الـ17 واعلنه عليك خطة أسبوع.</li><li>اكتب قرار مالي واحد صغير (ادخار/تفاوض/شراء مستتر) وطبقه في أول أسبوع.</li></ol></div>
+<div class="fruit">★ النتيجة: إدراك مخططك المالي — وده لوحده بيتغير عنده سلوك صغير كتير</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب العبارات الثلاثة من طفولتك. <b>الأسبوع الأول:</b> طبّق ملف واحد عمليًا واكتب النتيجة. <b>الشهر الأول:</b> راجع: سلوكك المالي اتغير فين بوضوح؟</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">الطريق السريع للمليونير</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Millionaire Fastlane</span>
+<div class="meta">إم جي ديماركو — أشهر كتاب حديث ضد فكرة «الادخار البطيء» — تقييم 4.4/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> في 3 طرق: الرصيف (عايش على مرتب)، الحارة البطيئة (ادخار واستثمار 40 سنة)، والحارة السريعة (بتبني نظام بيعمل فلوس وانت نايم) — الغنى الحقيقي في السرعة التالتة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الغنى في السرعة مش الادخار: النظام اللي بيخدم ملايين الناس (Scale) هو اللي بيخلي ملايين.</li><li>الحارة السريعة عندها 3 أوامر: التحكم (نظامك مش وظيفتك)، بيخدم حاجة حقيقية للناس، والوقت (مش مرتبط بساعاتك).</li><li>المؤثرات (Asymmetric): صنع منتج/خدمة مفعولية بيتكرر بيعها من غير وقتك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد قاعدة واحدة الناس بتدفع فيها فعلًا (المشكلة اللي بتحلها بشكل ممتاز).</li><li>صممها في شكل قابل للتكرار (منتج/خدمة/كورس/أداة) — مش ساعتك للأجر.</li><li>اطلق نسخة مصغرة جداً (MVP) في أول 30 يوم وخد أرقام حقيقية من السوق.</li></ol></div>
+<div class="fruit">★ النتيجة: نظام صغير بيبيع لوحده — أول فلوس من غير ساعات شغلك</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب القاعدة اللي بتدفع فيها. <b>الأسبوع الأول:</b> ظبط الـMVP بشكل مبدئي. <b>الشهر الأول:</b> أول عرض حقيقي للسوق + أول عميل.</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">مربع الكاش فلو</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Rich Dad's CASHFLOW Quadrant</span>
+<div class="meta">روبرت كيوساكي — الجزء التاريخي الأشهر بعد البابا الغني — منهج الحرية المالية</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الناس في 4 أرباع: موظف (E)، صاحب مهنة (S)، صاحب نظام (B)، مستثمر (I) — الفرق بين الأرباع في الطريقة اللي الفلوس بتيجي بيها، ومفيش حرية غير في يمين المربع.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الشمال (E/S): بتبيع وقتك بفلوس — السقف محدود والضرايب بتاكل النصيب الأكبر.</li><li>اليمين (B/I): بتبني نظام أو استثمار بيشتغل بدالك — السقف مفتوح.</li><li>المهارة الجوهرية للحركة: القيادة والنظام — اللي بيبني نظام بيتحكم في فلوسه.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد موقعك الحالي في المربع بصدق، والموقع اللي عايزه بعد 5 سنين.</li><li>اكتب خطة الانتقال: مهارة واحدة (بيع/قيادة/استثمار) تتعلمها كل سنة.</li><li>ابدأ مصروف دخل إضافي صغير (side income) واربطه بمهمة مش بساعات.</li></ol></div>
+<div class="fruit">★ النتيجة: خطة مكتوبة للانتقال من يسار المربع ليمناه — بأول خطوة تنفيذية</div>
+<div class="plan"><b>اليوم الأول:</b> حدد موقعك الحالي والهدف في ورقة. <b>الأسبوع الأول:</b> سجل أول دخل صغير من غير ساعات شغلك. <b>الشهر الأول:</b> راجع: الطريق للحركة في المربع اتحدد ولا لسه كلام؟</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">أسطورة رجل الأعمال</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The E-Myth Revisited</span>
+<div class="meta">مايكل جيربر — أكتر من 3 مليون نسخة — أشهر كتاب عن بناء الشركات الصغيرة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> أغلب المشاريع الصغيرة بتموت لأن صاحبها فنى ماهر (شيف/مبرمج/مصمم) افتكر إنه بيزنس مان: لازم تسيب تفكر كفني (Technician) وتشتغل على المشروع (ON) مش جواه (IN).</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>3 شخصيات جواك: التكنشن (بيعمل الشغل)، المدير (بيظبط النظام)، الريادي (بيبني المستقبل) — لازم التلاتة.</li><li>النظام مش اختياري: كل حاجة مكتوبة وقابلة للتكرار — الشركة تشتغل من غيرك.</li><li>Franchise Prototype: صمم شغلك كأنك هتبيعه — ده بيولد نظافة وترتيب تلقائي.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب قائمة كل حاجة بتعملها بيدك أسبوعيًا في شغلك.</li><li>حوّل أول 3 حاجات لـ SOP مكتوب (خطوة بخطوة) قابل للتفويض.</li><li>خصص ساعتين أسبوعيًا شغل على البيزنس (تطوير/تخطيط) مش في البيزنس (تنفيذ).</li></ol></div>
+<div class="fruit">★ النتيجة: شغل مكتوب قابل للتكرار — وأول مهمة اشتغلت من غيرك فعلاً</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قائمة الشغل اليدوي. <b>الأسبوع الأول:</b> أول 3 أنظمة مكتوبة. <b>الشهر الأول:</b> فوض أول نظام كامل لحد تاني وقيس النتيجة.</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">مشروع المئة دولار</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The $100 Startup</span>
+<div class="meta">كريس جيليبو — دراسة على 1500 مشروع صغير ناجح — دليل ميداني للبداية بفلوس قليلة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> مش محتاج مليون ولا قرض تبدأ: خد مهارة عندك بالفعل + حاجة الناس بيدفعوا فيها فعلًا، وابدأ بمشروع مصغر بأقل من 100 دولار في وقت فراغك.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الصيغة: (مهارة عندك) + (مشكلة الناس بتدفع فيها) = عرض بسيط.</li><li>السوق بيجاوب أسرع من التخطيط: ابدأ صغير، اعرف الأرقام، بعدين كبر.</li><li>الحرية أصلًا: مشروع مصغر بيدّي دخل إضافي بسيط مع حياة حرة أفضل من شركة كبيرة مستعبدة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب 3 مهارات عندك حاليًا (شغل/هواية/خبرة) وحط جنب كل واحدة مين ممكن يدفع فيها.</li><li>اعرض فعلي واحد (خدمة/منتج بسيط) بسعر واضح لـ10 أشخاص من جمهورك النهاردة.</li><li>لو حد دفع: سلّم كويس واطلب توصية (review) — وكرر.</li></ol></div>
+<div class="fruit">★ النتيجة: أول دخل حقيقي من مهارة موجودة عندك أصلاً بفلوس أقل من 100 دولار</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الـ3 مهارات والجمهور المحتمل. <b>الأسبوع الأول:</b> اعرض على 10 أشخاص حقيقيين. <b>الشهر الأول:</b> أول 3 عملاء + أول توصيات مكتوبة.</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">علم الاغتناء</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Science of Getting Rich</span>
+<div class="meta">والاس واتلز — كتاب 1910 اللي وَلَّد فيلم وقانون الجذب The Secret — كلاسيكية الدخل</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الاغتناء عِلم وله قوانين: اللي بيتصرف بـ«عقلية إبداعية» (بيصنع قيمة أكتر) مش «تنافسية» (بياخد من غيره) بيتحرك مع القانون وبيوصل.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>العقل الإبداعي: أضف قيمة للحياة مش بتاخد حصة من حد — الحقل مفتوح.</li><li>الامتنان والصورة الواضحة: اثبت صورة هدفك وامتنِ عليها كل يوم — ده بيثبت التركيز.</li><li>الفعل الفعّال (Efficient Action): كل يوم فعل كامل في حتته، مش أفعال نص نص.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب صورة واضحة ومفصلة للدخل اللي عايزه وطريقة حياتك.</li><li>امتنِ صباحًا على 3 حاجات مكتوبة يوميًا — تمرين ثبات الصورة.</li><li>نفّذ كل يوم فعل كامل واحد بيخدم الصورة دي من غير تشتيت.</li></ol></div>
+<div class="fruit">★ النتيجة: تركيز يومي ثابت على هدف واحد — بيجمع زخم مش عادي</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الصورة المفصلة الأول. <b>الأسبوع الأول:</b> التزم تمرين الامتنان والفعل اليومي 7 أيام. <b>الشهر الأول:</b> راجع الصورة: بتقرب فعليًا بالأرقام ولا لا؟</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">شركة من شخص واحد</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Company of One</span>
+<div class="meta">بول جارفيس — من أشهر مبدعي الإنترنت المستقلين — فلسفة الشغل بصغر مقصودة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> النمو مش هدف دايمًا: شركة شخص واحد بتربح مليون أحسن من شركة 50 موظف مكتفية بالديون — الصغر المقصودة بتدي حرية واستقرار أعلى.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الأسئلة الأربعة قبل أي توسع: ده هيزود السعادة؟ الرابح؟ الاستقلال؟ الاحتفاظ بالعملاء؟</li><li>العملاء المخلصين أحسن من العملاء الجداد: الاحتفاظ أرخص من البيع الجديد.</li><li>الأنظمة قبل الأشخاص: من غير ما تشغّل حد، ابدأ بأدوات وأتمتة — بعدين فكّر.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اعمل قائمة العملاء الحاليين واكتب خطوة واحدة تخلي كل واحد يفضل معك أكتر.</li><li>أتمتة عملية بيع واحدة (عرض/دفع/تسليم) بدل ما تعملها يدوي كل مرة.</li><li>قبل أي توسع قادم، اعرض الأسئلة الأربعة على القرار واكتب الإجابات.</li></ol></div>
+<div class="fruit">★ النتيجة: بيزنس أصغر وأرخص تشغيلًا — برابح أعلى ونسبة رفض أقل</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب خطوة الاحتفاظ بالعملاء الأقرب. <b>الأسبوع الأول:</b> نفّذ أول أتمتة كاملة. <b>الشهر الأول:</b> قيس الربح مقابل الوقت: زادت ولا التوسع بس؟</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">خطواتك الخمس الجاية</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Your Next Five Moves</span>
+<div class="meta">باتريك بيت ديفيد — من أشهر مدراء الأعمال الأمريكيين الحديثين — تقييم 4.5/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الناس الناجحة بتفكر 5 خطوات قدام — قبل ما تتحرك: عارف نفسك، عارف مهاراتك المطلوبة، وعارف الخطوة اللي بعد اللي بعد اللي.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>التفكير بالخمس: كل حركة لازم تكون جزء من خمس حركات متسلسلة مش رد فعل.</li><li>رص المهارات (Skill Stacking): النجاح من دمج مهارات متوسطة بذكاء مش إتقان واحد بس.</li><li>الوعي الذاتي أصل: وقت ما تدفع صح، مين بتحب تتعلم منه، وإيه قيمتك الحقيقية — كل دي مدخلات القرار.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب خطواتك الخمس الجاية في الحياة/الشغل بصيغة جمل لكل خطوة.</li><li>حدد المهارات المطلوبة للخطوة الجاية، ورصّها (واحدة كل 3 شهور).</li><li>اعمل مراجعة شهرية: الخطوة اللي انا فيها بتخدم الخمس ولا هربت عن السكة؟</li></ol></div>
+<div class="fruit">★ النتيجة: وضوح مسار من 5 خطوات بدل هرولة في مشاريع متناثرة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الخمس في ورقة واحدة. <b>الأسبوع الأول:</b> حدد أول مهارة وابدأ تعلمها فورًا. <b>الشهر الأول:</b> مراجعة شهرية: عدّلت الخمس ولا كمّلت على العمي؟</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">تأثير التراكم</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Compound Effect</span>
+<div class="meta">دارين هاردي — من أشهر كتب التنمية الحديثة — منهج التراكم الصغير</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> القرارات الصغيرة اليومية مش محسوسة فورًا، لكن مع الوقت بتتراكم: 1% أحسن كل يوم = قفزة كبيرة بعد سنة — والاتجاه أهم من السرعة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>التغيير الحقيقي بيبان بعد شهور مش أيام — اللي بيستسلم في الشهر الأول بيفضل مكانه دايمًا.</li><li>العادات الصغيرة بتحرك الاتجاه: النتائج دي حصيلة يومية مش ضربة حظ.</li><li>المسار والمسؤولية (Tracking): اللي بيقيس يوميًا بيكمل 90% أكتر من اللي بيحس.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد عادة واحدة صغيرة (10 دقايق يوميًا) بتخدم هدفك الكبير.</li><li>سجّلها يوميًا في ورقة/تطبيق من غير انقطاع — الهدف السلسلة مش الكمال.</li><li>اعمل مراجعة كل أسبوع: اتجاه النتائج بيصعد ولا بيهبط؟</li></ol></div>
+<div class="fruit">★ النتيجة: بعد 90 يوم: عادة راسخة ونتيجة بتقاس بالأرقام مش بالإحساس</div>
+<div class="plan"><b>اليوم الأول:</b> حدد العادة الصغيرة وابدأها النهاردة. <b>الأسبوع الأول:</b> التزم سلسلة 7 أيام بلا انقطاع. <b>الشهر الأول:</b> راجع التراكم شهريًا: النتيجة الفعلية كام؟</div>
+</div></div></section><section class="sec" id="sec-habits">
+<div class="sec-head"><div class="sn">◆ القسم 5 من 6 ◆</div><h2>طوّر من نفسك</h2><p>يومك: عادات وإنتاجية بتحول النية لنتيجة</p></div>
+<div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">العادات الذرية</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Atomic Habits</span>
+<div class="meta">جيمس كليير — أكتر من 20 مليون نسخة — أشهر كتاب عادات في التاريخ</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> 1% أحسن كل يوم بيبني فرق مهول: انت مش بتبني عادة، انت بتبني هوية — كل عادة صوت لصالح الشخص اللي عايز تبقى هو.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الهوية قبل النتيجة: مش «عايز أعمل رياضة»، «انا شخص رياضي» — العادة بتصوت للهوية.</li><li>قانون العادات الأربعة: محفز → رغبة → استجابة → مكافأة — عدّل أي حلقة والسلوك يتغير.</li><li>البيئة أقوى من الإرادة: خلي العادة الحلوة قريبة والسيئة بعيدة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد هوية: «انا ببقى مين؟» واكتب عادتين صغيرتين بتصوت للهوية دي يوميًا.</li><li>طبّق القاعدة: العادة الجديدة بعد عادة قائمة («بعد القهوة بقرأ 10 صفحات»).</li><li>ظبط البيئة: حط أداة العادة قدام عينك واحذف/خبي أداة العادة السيئة.</li></ol></div>
+<div class="fruit">★ النتيجة: عادات بتبان تلقائيًا بعد شهر — من غير صراع إرادة يومي</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الهوية والعادتين. <b>الأسبوع الأول:</b> طبّق ربط «بعد... بعمل...» 7 أيام. <b>الشهر الأول:</b> راجع: مين بقا صوته أعلى في دماغك؟</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">قوة العادة</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Power of Habit</span>
+<div class="meta">تشارلز دوهيج — أكتر من 3 مليون نسخة — أشهر بحث صحفي عن العلم وراء العادات</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> كل عادة حلقة: إشارة → روتين → مكافأة — العادة عمرها ما بتموت، بس بتتبدل: امسك الإشارة والمكافأة وغيّر الروتين بس.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>Golden Rule: خلي الإشارة والمكافأة زي ما هما، وبدّل الروتين — ده سر إيقاف التدخين والتسويف.</li><li>عادات المفتاح (Keystone): عادة واحدة كويسة بتشد وراها عادات تانية (رياضة → نوم → أكل).</li><li>الإيمان والجماعة: العادة بتثبت لما تؤمن بيها + تقابل ناس زيك بتعملها.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد عادة واحدة عايز تبطلها: اكتب إشارتها ومكافأتها الحقيقية بالظبط.</li><li>صمّم روتين بديل يحقق نفس المكافأة (محتاج راحة؟ مش سوشيال — مشي 5 دقايق).</li><li>شكّل حلقة مساءلة: حد واحد بيتابعك على العادة الجديدة أسبوعيًا.</li></ol></div>
+<div class="fruit">★ النتيجة: عادة قديمة انفصلت عن مكافأتها — وروتين جديد بيدي نفس المتعة بحقيقة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب حلقة العادة المطلوبه بتاعتك. <b>الأسبوع الأول:</b> طبّق الروتين البديل كل مرة تحصل الإشارة. <b>الشهر الأول:</b> قيس التكرار: العادة القديمة قلت كام مرة؟</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">الشغل العميق</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Deep Work</span>
+<div class="meta">كال نيوبورت — أشهر كتاب إنتاجية حديث — تقييم 4.3/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> القدرة على التركيز العميق بلا تشتيت بقت أندر مهارة في الاقتصاد — اللي بيقدر يساعة عميقة بيزدهر، واللي عايش في تشتيت مقولش حاجة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>المعادلة: الشغل العميق = وقت مركز × كثافة — ساعة عميقة أقوى من يوم سطح مشتت.</li><li>الملل مش عدو: دماغك بيتدرب على التركيز لما تتحمل الملل — كل مرة تشتت نفسك بتعلم التشتت.</li><li>السطح مش بيتلغي: رتّبه في حصص صغيرة عشان مياكلش يومك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد حصة عميقة واحدة يوميًا (60-90 دقيقة): موبايل بعيد، إشعارات مقفولة، مهمة واحدة.</li><li>اكتبها في الجدول كموعد رسمي مش «لو فضيت».</li><li>سجل ساعاتك العميقة أسبوعيًا: هدف الزيادة بالتدريج 4 حصص/يوم.</li></ol></div>
+<div class="fruit">★ النتيجة: 3-4 ساعات عمل عميق يوميًا بتفوق أسبوع كامل شغل مشتت</div>
+<div class="plan"><b>اليوم الأول:</b> ظبط أول حصة عميقة النهاردة. <b>الأسبوع الأول:</b> التزم 5 حصص في الأسبوع وسجلها. <b>الشهر الأول:</b> زود الحصص تدريجيًا وقيس النتاج الفعلي.</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">إنجاز المهام</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Getting Things Done</span>
+<div class="meta">ديفيد ألين — أشهر منهج إنتاجية في العالم (GTD) — أكتر من مليون نسخة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> دماغك عشان يتسجل مش عشان يخزن: كل حاجة مفتوحة في دماغك بتسحب طاقة — النظام الواضح (Capture → Clarify → Organize) بيفضي دماغك للشغل بس.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>المعادلة: كل حاجة مفتوحة بتسحب تركيزك — كل حاجة مسجلة في نظام موثوق بتسيب دماغك فاضي.</li><li>الـ2 دقيقة: أي حاجة بتاخد أقل من دقيقتين اعملها فورًا مش تخزنها.</li><li>المشروع مفتوح = الخطوة الجاية محددة: مفيش حاجة اسمها «أشتغل على المشروع»، في «أكتب مقدمة الصفحة».</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اعمل تفريغ كامل (Brain Dump): كل حاجة في دماغك في ورقة واحدة.</li><li>قسّمها: أقل من دقيقتين → اعمل فورًا، مشروع → حدد الخطوة الجاية، معلومة → ملف.</li><li>راجع النظام مرة يوميًا ومرة أسبوعيًا (Review) — المراجعة سر ثقة النظام.</li></ol></div>
+<div class="fruit">★ النتيجة: راس فاضي ونظام بيوثق بكل حاجة — بس النتيجة اللي بتطلع بيكبر</div>
+<div class="plan"><b>اليوم الأول:</b> اعمل تفريغ دماغك كامل في ورقة. <b>الأسبوع الأول:</b> ظبط صندوق الوارد والمراجعة اليومية. <b>الشهر الأول:</b> ثبّت المراجعة الأسبوعية وقيس الشغل المنجز.</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">اكل الضفدع</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Eat That Frog</span>
+<div class="meta">براين تريسي — أشهر كتاب عن التسويف وأولوية المهام — منهج ABCDE</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> ابدأ يومك بأصعب مهمة (الضفدع) وأنت في أحسن حالة: اللي بياكل الضفدع الصبح، بقية اليوم بتمشي خفيف — التسويف بيتحل بفعل مش بحافز.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>قاعدة الضفدع: المهمة الأصعب والأهم هي اللي لازم تتاكل الأولى.</li><li>نظام ABCDE: A (لازم، عواقب جدية)، B (يفضل)، C (كويس)، D (فوض)، E (الغِ).</li><li>التخطيط اليومي: 10-15 دقيقة كل يوم قبلها بترسم يومك قبل ما يرسمك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>قبل بداية الشغل بكرة: اكتب قائمة ABCDE لأهم 6 مهام، والضفدع أول واحدة.</li><li>اقفل التشتت أول 90 دقيقة: موبايل بعيد، إيميل مقفول، ومياه وقهوة جنبك.</li><li>اعمل التفويض (D) والحذف (E) قبل ما تعمل أي حاجة C.</li></ol></div>
+<div class="fruit">★ النتيجة: أصعب حاجة في يومك بتخلص قبل الساعة 11 — والباقي كله زيادة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قائمة ABCDE ليك بكرة. <b>الأسبوع الأول:</b> التزم اكل الضفدع أول 5 أيام شغل. <b>الشهر الأول:</b> راجع: الضفادع بتخلص ولا بتتراكم؟</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">الموضوعية (العيش الجوهري)</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Essentialism</span>
+<div class="meta">جريج ماكيون — أشهر كتاب حديث عن «الأقل الأهم» — تقييم 4.3/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> كل حاجة مش نعم واضحة هي لا: اتعود نستبعد 90% عشان نعمل الـ10% الأهم عمل ممتاز — محاولة عمل كل حاجة بتخليك متمكن ولا حاجة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>Trade-off حقيقة: كل نعم لشيء هي لا لشيء تاني — اللي بيحاول يعمل كل حاجة مش بيعمل حاجة.</li><li>قاعدة 90%: لو حاجة أقل من 90% ممتازة، اقتلها — جودة أقل مش نتيجة أقل، دي نتيجة متوسطة.</li><li>الحماية: كلمات مهذبة للاعتذار هي مهارة — «شكرًا، مش قد دحين» تحمي وقتك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب كل التزاماتك الحالية وحدد أهم 3 منها بس.</li><li>اعتذر/انسحب بأدب من واحد التزام مش من الـ3 في الأسبوع ده.</li><li>قبل أي طلب جديد: اسأل «ده من أهم 10% عندي؟» قبل أي جواب.</li></ol></div>
+<div class="fruit">★ النتيجة: وقت بيتضاعف للـ3 حاجات المهمة — ونتايج بتتحول من متوسطة لممتازة</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قائمة الالتزامات وحدد الثلاثة. <b>الأسبوع الأول:</b> اعتذر بأدب عن التزام واحد على الأقل. <b>الشهر الأول:</b> راجع جودة النتائج في الـ3 المختارين.</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">نادي الخامسة صباحًا</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The 5 AM Club</span>
+<div class="meta">روبن شارما — أشهر كتاب حديث عن الصباح المبكر — فلسفة 20/20/20</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الساعة الأولى من يومك بتصنع باقيه: اللي بيمتلك صباحه بيمتلك يومه — وصيغة 20/20/20 (حركة، تأمل/تأمل ديني، تعلم) بترفع مستوى باقي الـ23 ساعة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الـ20/20/20: 20 دقيقة حركة، 20 دقيقة سكون/وِرد، 20 دقيقة تعلم/قراءة — قبل الساعة 6.</li><li>الصحو المبكر مش سحر، ده قرار بنوم كافي: نام بدري عشان تصح بدري.</li><li>الخصوصية الصباحية: الساعة اللي مفيش فيها أحد بيطلب منك حاجة هي أعلى إنتاجية في يومك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>ظبط وقت نوم يخليك تصحى قبل الفجر بساعة (نوم 7 ساعات على الأقل).</li><li>طبّق 20/20/20 أول أسبوع حتى لو مش كامل بنسبة، المهم الثبات.</li><li>اكتب إنجاز الصباح كل يوم سطرًا: «عملت إيه بنفسي النهاردة؟»</li></ol></div>
+<div class="fruit">★ النتيجة: ساعة يومية ملكك انت — بتغذي جسمك وعقلك وهدفك قبل أي حد</div>
+<div class="plan"><b>اليوم الأول:</b> حدد وقت النوم المطلوب عشان تصحى بدري بكرة. <b>الأسبوع الأول:</b> التزم 20/20/20 خمس أيام متتالية. <b>الشهر الأول:</b> قيس الفرق في مستوى طاقتك وصفاء دماغك.</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">العادات الصغيرة</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Mini Habits</span>
+<div class="meta">ستيفن جايز — أشهر كتاب عن بدء العادات من الصفر — تقييم 4.4/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> العادات بتفشل عشان بتبدأ كبيرة: خليها صغيرة لدرجة سخيفة (ضغط واحد، صفحة واحدة) — الدماغ بيرفض يبدأ حاجة كبيرة وبيلتزم بحاجة أهون من كسله.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>قاعدة الاستحالة: عادتك لازم تكون صغيرة لدرجة إنك متقدرش تقول لأ (البس هدوم الرياضة بس).</li><li>الكمية الصغيرة بتكبر تلقائيًا: البداية السخيفة بتتحول 90% من الوقت لجلسة كاملة.</li><li>الثبات أهم من الكمية: يوميًا صغير أحسن من كثير مرة كل أسبوع.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>حدد عادة مصغرة سخيفة: «صفحة قراءة»، «ضغط واحد»، «سطر كتابة» — حرفيًا.</li><li>طبقها كل يوم بدون نقاش داخلي — ممنوع تكمل لو مش نفسك (التزام بس).</li><li>سجل بالعلامة اليومية (X) على تقويم مرئي وخلّي السلسلة قدام عينك.</li></ol></div>
+<div class="fruit">★ النتيجة: سلسلة يومية ما بتتقطعش — وعادة بتكبر لوحدها من غير ضغط</div>
+<div class="plan"><b>اليوم الأول:</b> اختار العادة السخيفة بتاعتك. <b>الأسبوع الأول:</b> التزم 7 أيام بالعلامة اليومية. <b>الشهر الأول:</b> راجع: العادة كبرت لوحدها كام مرة؟</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">اصنع وقت</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Make Time</span>
+<div class="meta">جيك ناب — من مصممي Google Ventures — دليل عملي لتصميم يومك</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> مفيش وقت بيطلع من العدم، فيه وقت بيتصنع: نظام Highlight (أهم حاجة) + Laser (تركيز) + Energize (طاقة) بيمسك يومك من الميليش اللامتناهي.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>Highlight: حدد يوميًا «حاجة واحدة لو خلصت النهاردة تبقى يوم مش رقم» — مش أكتر.</li><li>Laser: اتحكم في برك التشتت (Infinity Pools: سوشيال/يوتيوب) — كل تحكم بسيط = تركيز مضاعف.</li><li>Energize: طاقة الجسم هي قاعدة الإنتاجية — أكل/حركة/نوم قبل أي تطبيق مهام.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>كل صباح: اكتب Highlight النهاردة (90 دقيقة محجوزة ليها قبل أي حد).</li><li>ظبط تقنية الخداع ضد التشتت: سوشيال على السطح مش لوجين، إشعارات مقفولة، شاشة رمادية.</li><li>راجع يومك آخره: فين ضاع وقتك فعليًا؟ واحد تعديل لبكرة.</li></ol></div>
+<div class="fruit">★ النتيجة: كل يوم فيه حاجة حقيقية بتخلص — بدل يوم عشان السوشيال والردود</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب Highlight أول تجربة بكرة. <b>الأسبوع الأول:</b> طبّق تعديل تشتت واحد وقيّمه. <b>الشهر الأول:</b> راجع: كام يوم في الشهر خلصت فيها الـHighlight؟</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">مت وهي صفر</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Die with Zero</span>
+<div class="meta">بيل بيركنز — من أشهر كتب التخطيط المالي الحديثة — تقييم 4.3/5</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الهدف مش تموت وأنت أغنى واحد: الهدف تموت وأنت استهلكت حياتك صح — الفلوس بتحول لذكريات ومغامرات وصحة، والوقت عنصر ما بيتجددش، فالتوزيع أهم من التجميع.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>كل مرحلة عمر ليها استهلاك معين: صحة وسفر وشباب عمره ما يرجع — الفلوس للذكريات مش للجيب.</li><li>خذ المخاطرة وأنت صغير: الخسارة الوقتية بتعوض، الخسارة العمرية عمرها ما بتعوض.</li><li>ادخل المرتب لذكرياتك: اشترِ تجارب مش حاجات — التجارب بتتراكم معناها والحاجات بتتراكم غبار.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب قائمة التجارب اللي عايزها في كل عقد من حياتك (20s/30s/40s...) بفلوس وأوقات.</li><li>حدد ميزانية «ذكريات» شهرية: مصروف ثابت لخبرات مش أغراض.</li><li>راجع ميزانيتك: اقلل من «بعد 10 سنين» لصالح «السنة دي» بنسبة واضحة.</li></ol></div>
+<div class="fruit">★ النتيجة: عمر موزع صح — فلوس بتتحول لحاجات حقيقية مش أرقام بتتراكم وتضيع</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قائمة العقد بتاعتك. <b>الأسبوع الأول:</b> ظبط أول ميزانية ذكريات شهرية. <b>الشهر الأول:</b> نفّذ أول تجربة من القايمة وسجلها.</div>
+</div></div></section><section class="sec" id="sec-ai">
+<div class="sec-head"><div class="sn">◆ القسم 6 من 6 ◆</div><h2>الشغل مع الـ AI</h2><p>زميلك الجديد: إزاي تتعامل مع الذكاء الاصطناعي وتطلع منه أحسن جودة</p></div>
+<div class="lecture">
+<h3>◆ المحاضرة المصغرة: الشغل مع الـ AI: إزاي تطلع منه أحسن جودة</h3>
+<div class="lsub">محاضرة مصغرة — من حسن لكل حد بيشتغل مع الذكاء الاصطناعي</div>
+<div class="lintro">الـ AI مش كرة سحرية ولا آلة بتبيع أجوبة: النتيجة اللي بتطلع منه مرآة للطلب اللي دخلته. أغلب اللي بيقولوا «الـ AI مش شاطر» بيدخلوا طلبات ضعيفة ويستلموا نتايج ضعيفة. المحاضرة دي هتديك الطريقة الاحترافية كاملة — من أول ما تكتب الطلب لحد ما تستلم جودة تشتغل بيها.</div>
+<div class="lpart"><div class="lh">١. افهم مع مين بتتكلم</div><ul class="lul"><li>الـ AI آلة تنبؤ: بيستنتج الأجوبة من أنماط اتدرب عليها — عمره ما شاف شغلك ولا حسن ولا EXAADO: سياقك انت اللي بتدخله له.</li><li>بيغلط بثقة: أسلوبه دايمًا واثق حتى وهو بيغلط — التحقق مسؤوليتك انت مش مسؤوليته.</li><li>الحد المسنن: عبقري في حاجات (كتابة، تلخيص، أفكار أولية) وأضعف في حاجات جنبهم (أرقام دقيقة، أحداث جاية) — اكتشف خريطته بنفسك.</li></ul></div><div class="lpart"><div class="lh">٢. الوصفة: البرومبت الاحترافي 5 عناصر</div><ul class="lul"><li>١. الدور: «انت خبير تسويق بخبرة 10 سنين» — بيظبط عمق ونبرة الإجابة.</li><li>٢. السياق: مين انت، إيه الهدف، إيه الوضع الحالي — من غير سياق بيخمن.</li><li>٣. المهمة: فعل محدد (اكتب/لخص/حلل/انتقد/راجع) — مش «ساعدني في كذا».</li><li>٤. القيود والشكل: الطول، اللغة (عامية/فصحى/إنجليزي)، التنسيق، والممنوعات.</li><li>٥. مثال واحد: عينة من الجودة اللي عايزها — المثال بيختصر 100 كلمة شرح.</li><li>نصيحة: مهمة واحدة في البرومبت الواحد — خمس مهام متلخبطة = خمس نتايج نص نص.</li></ul></div><div class="lpart"><div class="lh">٣. دورة التحسين — السر الحقيقي للجودة</div><ul class="lul"><li>أول إجابة = مسودة مش تسليم. اللي بيوقف عند الإجابة الأولى بياخد 60% من الجودة الممكنة.</li><li>النقد الصريح: قله «انتقد إجابتك وحدد 3 عيوب» — بيلاقي عيوب انت مش شايفها.</li><li>التعديل الموجه: بدل «حسنها» قله «خلي النبرة أقصر، والخطوة التالتة أوضح» — التحسين الفاضي بيطلع كلام عام.</li><li>كرر 2-3 مرات — الجودة الحقيقية بتطلع من التكرار مش من الحظ.</li></ul></div><div class="lpart"><div class="lh">٤. علّمه شغلك — التغذية</div><ul class="lul"><li>اديله عينات: ملفاتك، كتاباتك، هوية علامتك (زي ما اتعلم دزاين EXAADO كحلي وذهبي من موقعك مباشرة).</li><li>ثبّت قواعدك: قاعدة مكتوبة تتكرر في كل محادثة (زي سياسة الصدق: ممنوع معلومة من غير مصدر).</li><li>مكتبة برومبت: كل مهمة متكررة تتحول لقالب محفوظ — الوقت المتوفر بيتضاعف مع كل قالب.</li></ul></div><div class="lpart"><div class="lh">٥. الأخطاء الخمسة اللي بتضيع الجودة</div><ul class="lul"><li>١. الطلب المبهم: «اعمللي حملة» → قل الجمهور والهدف والميزانية واللغة.</li><li>٢. التصديق بدون تحقق: أرقام وأسماء وتواريخ لازم تتأكد من مصدر — الـ AI بيتخيل بثقة.</li><li>٣. قبول أول إجابة: أرخص جودة بأقل مجهود.</li><li>٤. البرومبت العملاق: 10 طلبات في واحد بتضيع كلهم.</li><li>٥. عدم الاستمرار: المهارة بتنمو بالاستخدام اليومي — أسبوع من الاستخدام الحقيقي أقوى من قراءة 10 كتب.</li></ul></div><div class="lpart"><div class="lh">٦. المسؤولية: انت المراجع الأخير</div><ul class="lul"><li>الـ AI بيسرّع شغلك مش بيفكر مكانك: القرار والتقدير والذوق بتوعك انت.</li><li>أي حقيقة هتنشرها باسمك (رقم، اسم، قانون) راجعها من مصدر قبل ما تخرج منك.</li><li>التوقيع على الشغل مسؤوليتك — الآلة مساعد، والجودة النهائية اسمك عليها.</li></ul></div>
+<div class="lpart"><div class="lh">الخطوات اللي تنفذها من المحاضرة:</div><ul class="lul"><li>خد مهمة حقيقية من شغلك واعملها بالوصفة كاملة (الدور + السياق + المهمة + القيود + مثال).</li><li>طبّق دورة التحسين: مسودة → نقد صريح → تعديل موجه → تسليم.</li><li>ابدأ مكتبة برومبت: أول 5 قوالب للمهام المتكررة عندك.</li></ul></div>
+<div class="fruit">★ ثمرة المحاضرة: تحول حقيقي من مستخدم عادي (نسخ ولصق) لمحترف بيشغّل الـ AI كزميل شاطر — جودة أعلى ووقت أقل بشكل بيتقاس</div>
+<div class="plan"><b>اليوم:</b> مهمة واحدة بالوصفة كاملة النهاردة. <b>الأسبوع:</b> مكتبة برومبت أول 5 قوالب + دورة تحسين في كل مهمة. <b>الشهر:</b> قيس الوقت الموفر والجودة — وثبت المكتبة على 15+ قالب.</div>
+</div><div class="cards"><div class="card" id="book-1">
+<div class="chead"><span class="num">1</span><span class="btitle">الذكاء المشترك</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Co-Intelligence</span>
+<div class="meta">إيثان موليك — البيست سيلر الأول 2024 — من بروفيسور وارتون عن الحياة والشغل مع الـ AI</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الـ AI مش أداة بتنقر عليها، ده زميل ذكي (Co-Worker) بتحاوره: اللي بيتعامل معاه كزميل شاطر بيطلع منه إنتاج مضاعف، واللي بيستخدمه كآلة بياخد نتايج متوسطة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>أربعة قواعد: احضر الـ AI معاك على كل مفاوضاتك، خليك انت الإنسان اللي في الكونترول، عامله كشخص بس قله انت مين بالظبط، وافترض إنه أسوأ AI هتشوفه في حياتك (هيتحسن كل سنة).</li><li>الحد المسنن (Jagged Frontier): الـ AI عبقري في حاجات وغبي جدًا في حاجات جنبهم — لازم تكتشف بنفسك فين بيتفوق وفين بيهبل.</li><li>البداية مهمة: أول 10% من البرومبت بتحدد 80% من جودة النتيجة — السياق والدور والهدف.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>خلي الـ AI زميل دايم: خد أي مهمة في شغلك واطلب من الـ AI عمل نسخة أولية قبل ما تبدأ.</li><li>في كل بداية محادثة: قله انت مين (خبير تسويق؟ مدقق؟) + السياق + المطلوب بالظبط + الشكل المطلوب.</li><li>سجل تجاربك: فين طلع نتايج ممتازة وفين طلع كلام فاضي — اعمل قايمتك الشخصية للحد المسنن.</li></ol></div>
+<div class="fruit">★ النتيجة: الـ AI بيتحول من لعبة لمُنتِج حقيقي في شغلك اليومي</div>
+<div class="plan"><b>اليوم الأول:</b> اختار مهمة واحدة وأدخل الـ AI معاك فيها من أولها. <b>الأسبوع الأول:</b> طبّق صيغة الدور+السياق+المطلوب في كل استخدام، وسجل النتايج. <b>الشهر الأول:</b> راجع قايمتك: فين بقى الـ AI عضو أساسي في شغلك؟</div>
+</div><div class="card" id="book-2">
+<div class="chead"><span class="num">2</span><span class="btitle">الموجة الجاية</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Coming Wave</span>
+<div class="meta">مصطفى سليمان — من مؤسس DeepMind — البيست سيلر العالمي عن مستقبل الـ AI</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> موجة الـ AI والبيوتكنولوجي جاية ولا هتتوقف — المشكلة الحقيقية مش التقنية، المشكلة «الاحتواء»: إزاي نستفيد من قوة مفيش حد يقدر يوقفها من غير ما تمزق المجتمع.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الموجة دي بتشتغل اتنين مع بعض: AI + بيولوجي — والتقاطع بينهم هو أكبر فرصة وأكبر خطر في التاريخ.</li><li>مشكلة الاحتواء: كل محاولة نوقف التقنية بتأجلها مش تمنعها — فالحل هو توجيه مش منع.</li><li>انت مش متفرج: اللي فاهم التقنية بيأثر في القرار — الثقافة التقنية بقت مسؤولية مواطنة.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>خصص وقت أسبوعي (ساعة) تقرأ وتتابع أخبار الـ AI من مصادر فنية مش سوشيال.</li><li>جرب بنفسك أدوات الـ AI في مجالك — الفهم بييجي من الاستخدام مش من الأخبار.</li><li>ناقش مع فريقك/أصحابك: إيه الحاجات اللي الـ AI يقدر يغيرها في شغلكم خلال سنتين؟</li></ol></div>
+<div class="fruit">★ النتيجة: وعي بالاتجاه العام — بتبان الفرص قبل ما تبقى خطر</div>
+<div class="plan"><b>اليوم الأول:</b> ابدأ متابعة مصدر فني واحد موثوق. <b>الأسبوع الأول:</b> جرب أداة AI جديدة في مهمة حقيقية. <b>الشهر الأول:</b> اعمل جلسة مع فريقك عن خطة التعامل مع الموجة.</div>
+</div><div class="card" id="book-3">
+<div class="chead"><span class="num">3</span><span class="btitle">نكسس (العقدة)</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Nexus</span>
+<div class="meta">يوفال نوح حراري — كتاب حراري 2024 — البيست سيلر العالمي عن الـ AI وشبكات المعلومات</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> التاريخ مش قصة أفراد، ده قصة شبكات معلومات — والـ AI أول «عضو غير بشري» بيدخل الشبكة دي وبيبدأ يصنع قصص وقرارات لوحده.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>المعلومات مش حيادية: الشبكات بتصنع الحقيقة بتاعتها — والـ AI بقى طرف بيصنعها.</li><li>خطر الـ AI مش سينما، خطره إنه يبقى أداة مراقبة وتزييف من غير ما نحس.</li><li>المؤسسات اللي بتصلح نفسها (ديمقراطية) هي اللي بتنجى من موجات المعلومات الجاية.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اتعامل مع كل معلومة جاية من الـ AI زي أي شاهد: جابها منين؟ مين روجعها؟</li><li>اختبر بنفسك: اطلب من الـ AI موضوع تعرفه كويس، وشوف غلطاته بنفسك عشان تعرف حدوده.</li><li>ظبط مصادرك: 3 مصادر موثوقة للحقايق بدل الدوامة.</li></ol></div>
+<div class="fruit">★ النتيجة: عقل نقدي متظبط — بتستخدم الـ AI من غير ما يضحك عليك</div>
+<div class="plan"><b>اليوم الأول:</b> اعمل اختبار الموضوع اللي انت شاطر فيه. <b>الأسبوع الأول:</b> ظبط قايمة مصادرك الموثوقة. <b>الشهر الأول:</b> راجع: اعتمادك على الـ AI بقى واعي ولا أعمى؟</div>
+</div><div class="card" id="book-4">
+<div class="chead"><span class="num">4</span><span class="btitle">عصر الذكاء الاصطناعي</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">The Age of AI</span>
+<div class="meta">هنري كيسنجر وإريك شميدت ودانيال هوتنلوخر — ثلاثي التاريخ والتقنية والأكاديميا — البيست سيلر عن التحول الحضاري</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الـ AI مش بس بيغيرلنا الشغل، بيغير طريقة معرفتنا نفسها: أول مرة في التاريخ آلة بتولد معرفة من غير ما تفهمها — وده بيغير العلاقة بين الإنسان والحقيقة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>التحول المعرفي: الـ AI بيطلع أجوبة من غير تفكير بشري — المسؤولية الجديدة: نفهم قبل ما نصدق.</li><li>التغيير مش في الأجوبة، في الأسئلة: اللي بيسأل صح مع الـ AI بيتقدم أسرع من اللي بيستهلك أجوبة.</li><li>الجيوبوليتكس: الدول اللي بتفهم الـ AI بتحكم القرن الجديد — والباقي مستهلك.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>قاعدة «اسأل قبل ما تتصق»: كل إجابة من الـ AI اتبعها بسؤال «ليه كده؟ اشرح منطقك».</li><li>درّب نفسك على صياغة الأسئلة: اسأل نفسك قبل كل برومبت — هل السؤال ده واضح ومحدد؟</li><li>خصص جلسة أسبوعية تجرب فيها الـ AI في مشاكل من مجالات مختلفة عشان توسع مداه.</li></ol></div>
+<div class="fruit">★ النتيجة: علاقة ناضجة مع الـ AI: بتسأل وبتشك وبتتحقق — مش بتصدق وتنسخ</div>
+<div class="plan"><b>اليوم الأول:</b> طبّق سؤال «ليه كده؟» على كل إجابة النهاردة. <b>الأسبوع الأول:</b> جرب 3 مجالات مختلفة واشرح النتايج. <b>الشهر الأول:</b> راجع أسلوبك: بقيت بتسأل أحسن ولا لسه بتنسخ؟</div>
+</div><div class="card" id="book-5">
+<div class="chead"><span class="num">5</span><span class="btitle">الحياة 3.0</span><span class="badgetag">الأكثر مبيعًا</span></div>
+<span class="en">Life 3.0</span>
+<div class="meta">ماكس تيجمارك — أشهر كتاب عن العيش في عصر الـ AI — البيست سيلر عالمي</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الـ AI هيعيد تعريف الشغل والحرب والسعادة — والسؤال مش «هيحصل إيه؟»، السؤال «إحنا عايزين إيه نحصل؟»: التصميم الواعي للمستقبل مسؤوليتنا انت مش مسؤولية الشركات.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الذكاء مش هدف، ده أداة: الأهم نحدد الأهداف اللي الذكاء بيخدمها.</li><li>الشغل هيتغير مش هيختفي: اللي بيتعلم يستخدم الـ AI بيكسب مكانة، اللي بيرفض بيتسيب ورا.</li><li>الخير المشترك: مشاركتك في النقاش العام عن الـ AI جزء من التوجيه.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اكتب: الـ AI عايزه يخدمني في إيه بالظبط في حياتك وشغلك (3 استخدمات واضحة).</li><li>حقق واحدة منهم بأداة حقيقية النهاردة.</li><li>راجع شهريًا: الـ AI قرّبك لهدفك ولا لسه مجرد لعبة؟</li></ol></div>
+<div class="fruit">★ النتيجة: وضوح شخصي: الـ AI بقى وسيلة لهدفك مش موضوع للكلام</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب الاستخدمات الثلاثة. <b>الأسبوع الأول:</b> نفّذ واحدة كاملة. <b>الشهر الأول:</b> قيس: وفرت وقت كام؟ وحققت إيه؟</div>
+</div><div class="card" id="book-6">
+<div class="chead"><span class="num">6</span><span class="btitle">هندسة البرومبت للذكاء التوليدي</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Prompt Engineering for Generative AI</span>
+<div class="meta">جيمس فينيكس ومايك تايلور — أشهر كتاب عملي عن البرومبت — O'Reilly — الأعلى تقييمًا في المجال</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> البرومبت مهنة حقيقية بعلوم وتقنيات مش مجرد صياغة: اللي بيتعلمها صح بيشغل الـ AI بمستوى محترف — من الكوستشوت للأمثلة لسلاسل التفكير لتقييم النتايج.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>تقنيات أساسية: حدد الدور، أعطي أمثلة (Few-Shot)، اطلب خطوات (Chain of Thought)، وحدد شكل الخروج (Output Structure).</li><li>التقييم (Evals): اللي مش بيقيس نتايجه مش بيتحسن — اعمل اختبارات ثابتة لبرومبتاتك.</li><li>البرومبت التشغيلي: اكتب برومبتاتك في ملفات قابلة لإعادة الاستخدام زي الكود.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اعمل مكتبة برومبت: ملف واحد فيه أحسن 10 برومبتات بستخدمها مع نتيجة كل واحد.</li><li>أضف لكل برومبت المهم: الدور + السياق + المطلوب + الشكل + مثال واحد.</li><li>اختبر التعديل: غيّر عنصر واحد في البرومبت وقارن النتيجة — سجل الأفضل.</li></ol></div>
+<div class="fruit">★ النتيجة: مكتبة برومبت شخصية بتشتغل — كل استخدام بقى أسرع وأدق من اللي قبله</div>
+<div class="plan"><b>اليوم الأول:</b> افتح ملف مكتبة البرومبت واكتب أول 3. <b>الأسبوع الأول:</b> ظبط 10 برومبتات بصيغة كاملة وسجل نتايجهم. <b>الشهر الأول:</b> راجع المكتبة: ايه اللي اشتغل واتثبت؟</div>
+</div><div class="card" id="book-7">
+<div class="chead"><span class="num">7</span><span class="btitle">فن هندسة البرومبت</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">The Art of Prompt Engineering</span>
+<div class="meta">ناثان هنتر — أشهر كتاب تطبيقي مبسط عن البرومبت — تقييم عالي ومراجعات ممتازة</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> فن التعامل مع الـ AI بيتعلم بالممارسة: البرومبت الصح مش أطول واحد، ده الأوضح — والاحتراف بيجي من التكرار والتعديل مش من الجمل الحلوة.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الوضوح فوق الكل: برومبت بسيط وواضح بيكسب برومبت معقد وملخبط.</li><li>التكرار المنهجي: أول إجابة مش نهائية — عدّل وحسّن بالتدريج لحد ما توصل للجودة.</li><li>القوالب (Templates): كل مهمة متكررة تستاهل قالب برومبت جاهز.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>خد مهمة متكررة عندك واعملها قالب برومبت جاهز بتعبّي فيه الفراغات.</li><li>في كل مهمة: اطلب الإجابة الأولى، وبعدين اطلب تحسينها بنقد صريح (قل: انتقد إجابتك وحسنها).</li><li>اختصر: لو البرومبت طويل، شيل اللي مش بيأثر — الاختصار فن.</li></ol></div>
+<div class="fruit">★ النتيجة: مهمات متكررة بتخلص في دقايق بقالب ثابت بدل ما تكتب كل مرة من الأول</div>
+<div class="plan"><b>اليوم الأول:</b> اعمل أول قالب لمهمة متكررة. <b>الأسبوع الأول:</b> استخدم القالب 5 مرات وعدّله بعد كل مرة. <b>الشهر الأول:</b> ثبّت المكتبة: القوالب الجاهزة بقى عددها كام؟</div>
+</div><div class="card" id="book-8">
+<div class="chead"><span class="num">8</span><span class="btitle">آلات التنبؤ</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Prediction Machines</span>
+<div class="meta">أجراوال وغانس وغولدفارب — ثلاثي هارفارد بزنس ريفيو — أشهر كتاب عن اقتصاد الـ AI للإداريين</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الـ AI في جوهره بيبقى رخيص جدًا في التنبؤ — ولما التنبؤ يبقى رخيص، قيمة المهارات بتتغير: الحكم البشري (Judgment) بيبقى هو الغالي.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>الـ AI = تنبؤ رخيص: حلل شغلك لمكونات، وحدد فين التنبؤات اللي ممكن تتأتمتة.</li><li>الحكم البشري بقى أغلى مهارة: تحديد الهدف والمعايير ده شغلك انت مش شغل الآلة.</li><li>البيانات رأس مال: من غير بيانات منضبمة الـ AI مش هيعمل حاجة — التنظيف أهم من الشراء.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>قسّم شغلك لقرارات، واكتب جنب كل قرار: تنبؤ؟ حكم؟ عمل؟</li><li>حدد قرارات التنبؤ اللي الـ AI ممكن ياخدها، وقرارات الحكم اللي بتفضل معاك.</li><li>ابدأ بأصغر قرار تنبؤي: أتمته بأداة بسيطة وقيس النتيجة.</li></ol></div>
+<div class="fruit">★ النتيجة: خريطة واضحة: عارف إيه اللي تتأتمته فعلًا وإيه اللي تستاهل عقلك انت</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب قائمة قراراتك المتكررة. <b>الأسبوع الأول:</b> صنّفها (تنبؤ/حكم/عمل) وحدد أول مرشح للأتمتة. <b>الشهر الأول:</b> نفّذ أول أتمتة وقيس الوقت الموفر.</div>
+</div><div class="card" id="book-9">
+<div class="chead"><span class="num">9</span><span class="btitle">الذكاء الفائق</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Superintelligence</span>
+<div class="meta">نيك بوستروم — الكتاب المرجعي الأعلى تقييمًا في فلسفة الـ AI — من أكسفورد</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> لو الذكاء الفائق حصل، السؤال مش هيحصل ولا لأ، السؤال: هنعرف نوجهه لمصلحتنا ولا لأ — الكتاب بياخدك لعمق المشكلة عشان تفهم ليه الـ AI مسؤولية حضارية.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>مشكلة المحاذاة (Alignment): خلي الآلة عايزة اللي انت عايزه أصعب ما بتتخيل — فهم المشكلة دي بيساعدك تفهم أخطاء الـ AI اليومي.</li><li>قيمة الحكم: كل خطأ صغير من الآلة = حاجة انت لازم تراجعها — الثقة العمياء مش مطروحة في عالم الذكاء.</li><li>السياق الكبير: فهم المخاطر طويل المدى بيخليك أوعى بالتطبيقات اليومية.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>طبّق مبدأ المحاذاة الشخصي: اكتب معايير المطلوب من الـ AI بوضوح قبل أي مهمة.</li><li>في كل نتيجة: اسأل «هل دي اللي كنت قصده؟» قبل «هل دي شكلها صح؟».</li><li>اقرأ فصل واحد أسبوعيًا واربطه باستخدامك اليومي للـ AI.</li></ol></div>
+<div class="fruit">★ النتيجة: منظور عميق — بتستخدم الـ AI بوعي أخطاره مش بس مميزاته</div>
+<div class="plan"><b>اليوم الأول:</b> اكتب معايير مهمة واحدة قبل ما تسلّمها للـ AI. <b>الأسبوع الأول:</b> طبّق سؤال «دي اللي كنت قصده؟» كل يوم. <b>الشهر الأول:</b> اختبر: معاييرك الواضحة قللت الأخطاء قد إيه؟</div>
+</div><div class="card" id="book-10">
+<div class="chead"><span class="num">10</span><span class="btitle">كلمات جديدة جريئة</span><span class="badgetag">الأعلى تقييمًا</span></div>
+<span class="en">Brave New Words</span>
+<div class="meta">سلمان خان — من مؤسس أكاديمية خان — أشهر كتاب عن الـ AI في التعلم والتعليم</div>
+<div class="block"><span class="lab">◆ الفكرة الكبيرة:</span> الـ AI جاب فرصة تاريخية للتعلم المخصص: كل واحد بقى عنده مدرس خاص 24 ساعة — واللي هيعرف يستخدمه في التعلم هيوصل لمستوى ما كانش ممكن قبل كده.</div>
+<div class="block"><span class="lab">◆ أهم حاجات هتاخدها منه:</span><ul class="take"><li>المدرس الخاص: الـ AI بيشرح لأي مستوى ويعيد بأي طريقة — التعلم بقى في يدك انت.</li><li>التعلم بالممارسة: اطلب من الـ AI أمثلة وتمارين ومحاكاة مش شرح بس.</li><li>الكتابة والحوار: حاور الـ AI في الموضوع اللي بتتعلمه — الحوار أقوى من القراءة السلبية.</li></ul></div>
+<div class="block"><span class="lab">◆ الخطوات اللي تنفذها:</span><ol class="steps"><li>اختار مهارة عايز تتعلمها واعمل الـ AI مدرسك: اطلب خطة تعلم من مستواك الحالي.</li><li>في كل جلسة تعلم: اطلب شرح، بعدين تمرين، بعدين طلب من الآلة تختبرك وتصححك.</li><li>اسأل الآلة تشرحلك بصيغ مختلفة (بساطة/مثال/قصة) لحد ما تفهم بجد.</li></ol></div>
+<div class="fruit">★ النتيجة: مهارة جديدة بتتقنها في أسابيع بدل شهور — بمدرس خاص شغال معاك 24 ساعة</div>
+<div class="plan"><b>اليوم الأول:</b> اطلب خطة التعلم الأولى. <b>الأسبوع الأول:</b> التزم جلسة يومية 30 دقيقة مع الاختبار والتصحيح. <b>الشهر الأول:</b> قيس مستواك قبل وبعد واكتب الفرق.</div>
+</div></div></section>
+</div>
+<button id="top-btn" onclick="scrollTo({top:0,behavior:'smooth'})" title="فوق">▲</button>
+<footer>◆ <span class="g">EXAADO</span> — دليل الكتب الكامل • إعداد خاص لحسن — أكتوبر 2026 • «لا نعدكم بأرباح ولا نبيع أوهام»</footer>
+<script>
+const btn=document.getElementById('top-btn');
+addEventListener('scroll',()=>btn.classList.toggle('show',scrollY>600));
+const links=[...document.querySelectorAll('nav a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{{
+let cur=-1;
+secs.forEach((s,i)=>{{ if(s.getBoundingClientRect().top<140) cur=i; }});
+links.forEach((a,i)=>a.classList.toggle('active',i===cur));
+}});
+</script>
+</body></html>
